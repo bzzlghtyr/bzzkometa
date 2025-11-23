@@ -1,0 +1,129 @@
+templates:
+#####################################
+#    Custom Collection Templates    #
+#####################################
+  Holiday:
+    smart_label: title.asc
+    summary: "A timed collection of <<holiday>> movies and other movies that may relate to the holiday. NOTE: this collection will automatically disappear once the holiday period is over."
+    delete_not_scheduled: true
+    #sort_title: '!AA'
+    run_again: true
+    visible_home: true
+    visible_shared: true
+    sync_mode: sync
+
+collections:
+#####################################
+#        Holiday Collections        #
+#####################################
+  Valentines Day Movies:
+    smart_label: user_rating.desc
+    schedule: range(01/25-02/14)
+    sort_title: '!AAF'
+    template: {name: Holiday, holiday: "Valentine's Day"}
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+
+  St Patricks Day Movies:
+    smart_label: user_rating.desc
+    schedule: range(03/01-03/17)
+    template: {name: Holiday, holiday: "St. Patrick's Day"}
+    imdb_list: https://www.imdb.com/list/ls063934595/
+
+  Halloween Movies:
+    smart_label: user_rating.desc
+    file_poster: config/Posters/Halloween/Halloween.png
+    schedule: range(09/01-11/03)
+    sort_title: '!AAC'
+    template: {name: Holiday, holiday: Halloween}
+    imdb_list:
+      - https://www.imdb.com/list/ls000091321/
+      - https://www.imdb.com/list/ls023118929/
+      - https://www.imdb.com/list/ls021038698/
+      #- https://www.imdb.com/search/title/?genres=horror
+    tmdb_collection:
+      - 91361    # Halloween Collection
+      - 8581     # A Nightmare on Elm Street Collection
+      - 1733     # The Mummy Collection
+      - 8091     # Alien Collection
+    tmdb_movie:
+      - 23437    # A Nightmare on Elm Street (2010)
+
+  Hallmark Lifetime Christmas Movies:
+    smart_label: user_rating.desc
+    file_poster: config/Posters/Hallmark Lifetime Christmas/Christmas.png
+    schedule: range(1/01-12/31)
+    sort_title: '!AAAB'
+    template: {name: Holiday, holiday: Hallmark/Lifetime Christmas}
+    trakt_list: 
+      - https://trakt.tv/users/ad76/lists/hallmark-christmas?sort=released,asc
+      - https://trakt.tv/users/ad76/lists/lifetime-christmas?sort=released,asc
+      # - https://www.imdb.com/list/ls097394442/  #Hallmark Christmas Movies
+      # - https://www.imdb.com/list/ls068976997/  #Hallmark Christmas Movies
+      # - https://www.imdb.com/list/ls027567380/  #Favorite Hallmark Christmas Movies
+      # - https://www.imdb.com/list/ls097327499/  #Lifetime Christmas Movies
+      # - https://www.imdb.com/list/ls048937439/  #Lifetime Christmas Movie List
+      # - https://www.imdb.com/list/ls027779660/  #Lifetime Christmas Movies
+      #- https://www.imdb.com/search/keyword/?keywords=christmas&ref_=fn_kw_kw_0
+    #collection_order: release
+
+  Christmas Movies:
+    smart_label:
+
+        sort_by: user_rating.desc
+        all:
+            label: <<smart_label>>
+            label.not: Hallmark Lifetime Christmas Movies
+    schedule: range(11/01-12/31)
+    file_poster: config/Posters/Christmas/Christmas.jpeg
+    sort_title: '!AAA'
+    template: {name: Holiday, holiday: Christmas}
+    #imdb_list: 
+    #  - https://www.imdb.com/list/ls000096828/  #The Top 100 Christmas movies of all-time - IMDb
+    #  - https://www.imdb.com/list/ls006571770/  #Top 25 Christmas Movies
+    trakt_list:
+      - https://trakt.tv/users/outspoken/lists/christmas
+      - https://trakt.tv/users/mausk/lists/christmas
+      - https://trakt.tv/users/mlantz87/lists/christmas?sort=popularity,asc
+      #- https://www.imdb.com/search/keyword/?keywords=christmas&ref_=fn_kw_kw_0
+    #collection_order: release
+
+  Kids Christmas Movies:
+    smart_label:
+
+        sort_by: user_rating.desc
+        all:
+            label: <<smart_label>>
+            label.not: Hallmark Lifetime Christmas Movies
+    schedule: range(11/01-12/31)
+    #file_poster: config/Posters/Christmas/Christmas.jpeg
+    sort_title: '!AAA'
+    template: {name: Holiday, holiday: Kids Christmas}
+    #imdb_list: 
+    #  - https://www.imdb.com/list/ls000096828/  #The Top 100 Christmas movies of all-time - IMDb
+    #  - https://www.imdb.com/list/ls006571770/  #Top 25 Christmas Movies
+    trakt_list:
+      - https://trakt.tv/users/chevyfan/lists/kids-christmas-movies
+      - https://trakt.tv/users/plexmedia/lists/kids-christmas-films
+      #- https://www.imdb.com/search/keyword/?keywords=christmas&ref_=fn_kw_kw_0
+    #collection_order: release
+
+  Thanksgiving Movies:
+    smart_label: user_rating.desc
+    schedule: range(11/01-11/30)
+    file_poster: config/Posters/Thanksgiving/Thanksgiving.jpeg
+    sort_title: '!AAD'
+    template: {name: Holiday, holiday: Thanksgiving}
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls086366598/
+      - https://www.imdb.com/list/ls045164453/
+
+  New Years Eve Movies:
+    smart_label: user_rating.desc
+    schedule: range(12/26-01/05)
+    sort_title: '!AAB'
+    template: {name: Holiday, holiday: "New Year's Eve"}
+    imdb_list: https://www.imdb.com/list/ls066838460/

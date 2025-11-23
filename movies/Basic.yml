@@ -1,0 +1,65 @@
+collections:
+  Trending:
+    trakt_list:
+      - https://trakt.tv/users/linaspurinis/lists/trending-movies-list?sort=rank,asc
+    smart_label: random #audience_rating.desc
+    summary: "Trending movies."
+    delete_not_scheduled: true
+    #sort_title: '!AA'
+    run_again: true
+    visible_home: true
+    visible_shared: true
+    sync_mode: sync
+  
+  Walt Disney Animation Studios:
+    trakt_list:
+      - https://trakt.tv/users/asterlea/lists/walt-disney-animation-studios
+    smart_label: release.desc
+    summary: "Movies from Walt Disney Animation Studios."
+    delete_not_scheduled: true
+    sort_title: '!Disney'
+    run_again: true
+    visible_home: true
+    visible_shared: true
+    sync_mode: sync
+    file_poster: config/Posters/WaltDisneyAnimationStudios_RHJ/Walt Disney Animation Studios.png
+
+
+  Pixar Animation Studios:
+    trakt_list:
+      - https://trakt.tv/users/asterlea/lists/pixar
+    smart_label: release.desc
+    summary: "Movies from Pixar Animation Studios."
+    delete_not_scheduled: true
+    sort_title: '!Pixar'
+    run_again: true
+    visible_home: true
+    visible_shared: true
+    sync_mode: sync   
+    file_poster: config/Posters/Pixar_RHJ/Pixar Animation Studios.png
+
+  Dreamworks Animation:
+    trakt_list:
+      - https://trakt.tv/users/mmagtech/lists/dreamworks-animation
+    smart_label: release.desc
+    summary: "Movies from Dreamworks Animation."
+    delete_not_scheduled: true
+    sort_title: '!Dreamworks'
+    run_again: true
+    visible_home: true
+    visible_shared: true
+    sync_mode: sync
+    file_poster: config/Posters/Dreamworks Animation/DreamWorks Animation.jpeg
+
+  Studio Ghibli:
+    imdb_list:
+      - https://www.imdb.com/list/ls033328579/
+    smart_label: audience_rating.desc
+    summary: "Movies from Studio Ghibli."
+    delete_not_scheduled: true
+    sort_title: '!Ghib'
+    run_again: true
+    visible_home: true
+    visible_shared: true
+    sync_mode: sync   
+    file_poster: config/Posters/StudioGhibli/Studio Ghibli.jpeg

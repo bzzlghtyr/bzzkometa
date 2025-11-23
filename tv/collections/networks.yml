@@ -1,0 +1,12 @@
+# /config/tv/collections/networks.yml
+# Example “by network” collections (library-only).
+
+collections:
+  CBS Originals:
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label:
+      all:
+        network: "CBS"
+      sort_by: title.asc

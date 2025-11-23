@@ -1,0 +1,25 @@
+# /config/libraries/movies.yml
+# “Movies” LIBRARY WIRING — declare which folders to load for this library.
+
+collection_files:
+  - folder: movies/collections/
+
+metadata_files:
+  - folder: movies/metadata/
+
+overlay_files:
+  - folder: movies/overlays/
+
+# Defaults most collection templates will inherit. You can override per-collection.
+template_variables:
+  visible_home: false
+  visible_shared: false
+  visible_library: true
+
+operations:
+  delete_collections:
+    managed: true
+    configured: true
+  mass_critic_rating_update: mdb_tomatoes
+  mass_audience_rating_update: mdb_tomatoesaudience
+  mass_user_rating_update: mdb_letterboxd

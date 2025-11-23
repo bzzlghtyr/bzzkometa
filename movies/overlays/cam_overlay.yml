@@ -1,0 +1,4 @@
+# /config/movies/overlays/cam_overlay.yml
+# Your existing cam overlay file path, kept separate for clarity.
+overlay_files:
+  - file: config/cam_overlay/CamOverlay.yml

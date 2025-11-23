@@ -1,0 +1,536 @@
+2025-09-06 14:56:24 >>> Running Kometa overlay for Big Brother (US) (container=Kometa)
+/usr/local/lib/python3.13/site-packages/arrapi/__init__.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+|====================================================================================================|
+|                                                                                                    |
+|                   __  ___  ______    ___  ___   _______  __________    ___                         |
+|                  |  |/  / /  __  \  |   \/   | |   ____||          |  /   \                        |
+|                  |  '  / |  |  |  | |  \  /  | |  |__   `---|  |---` /  ^  \                       |
+|                  |    <  |  |  |  | |  |\/|  | |   __|      |  |    /  /_\  \                      |
+|                  |  .  \ |  `--`  | |  |  |  | |  |____     |  |   /  _____  \                     |
+|                  |__|\__\ \______/  |__|  |__| |_______|    |__|  /__/     \__\                    |
+|                                                                                                    |
+|     Version: 2.2.1 (Docker: master)                                                                |
+|     Platform: Linux-6.6.78-Unraid-x86_64-with-glibc2.41                                            |
+|     Total Memory: 47 GB                                                                            |
+|     Available Memory: 34 GB                                                                        |
+|     Process Priority: normal                                                                       |
+|====================================================================================================|
+| Run Command: kometa.py --run --libraries "TV Shows" --overlays-only --metadata-only                |
+| --config (KOMETA_CONFIG): None                                                                     |
+| --times (KOMETA_TIMES): "03:00,11:17"                                                              |
+| --run (KOMETA_RUN): True                                                                           |
+| --tests (KOMETA_TESTS): False                                                                      |
+| --debug (KOMETA_DEBUG): False                                                                      |
+| --trace (KOMETA_TRACE): False                                                                      |
+| --log-requests (KOMETA_LOG_REQUESTS): False                                                        |
+| --timeout (KOMETA_TIMEOUT): 180                                                                    |
+| --no-verify-ssl (KOMETA_NO_VERIFY_SSL): False                                                      |
+| --collections-only (KOMETA_COLLECTIONS_ONLY): False                                                |
+| --metadata-only (KOMETA_METADATA_ONLY): True                                                       |
+| --playlists-only (KOMETA_PLAYLISTS_ONLY): False                                                    |
+| --operations-only (KOMETA_OPERATIONS_ONLY): False                                                  |
+| --overlays-only (KOMETA_OVERLAYS_ONLY): True                                                       |
+| --run-collections (KOMETA_RUN_COLLECTIONS): None                                                   |
+| --run-libraries (KOMETA_RUN_LIBRARIES): "TV Shows"                                                 |
+| --run-files (KOMETA_RUN_FILES): None                                                               |
+| --ignore-schedules (KOMETA_IGNORE_SCHEDULES): False                                                |
+| --ignore-ghost (KOMETA_IGNORE_GHOST): False                                                        |
+| --delete-collections (KOMETA_DELETE_COLLECTIONS): False                                            |
+| --delete-labels (KOMETA_DELETE_LABELS): False                                                      |
+| --resume (KOMETA_RESUME): None                                                                     |
+| --no-countdown (KOMETA_NO_COUNTDOWN): False                                                        |
+| --no-missing (KOMETA_NO_MISSING): False                                                            |
+| --no-report (KOMETA_NO_REPORT): False                                                              |
+| --read-only-config (KOMETA_READ_ONLY_CONFIG): False                                                |
+| --divider (KOMETA_DIVIDER): "="                                                                    |
+| --width (KOMETA_WIDTH): 100                                                                        |
+| --low-priority (KOMETA_LOW_PRIORITY): False                                                        |
+|                                                                                                    |
+|====================================================================================================|
+|                                       Starting Libraries Run                                       |
+|====================================================================================================|
+| Locating config...                                                                                 |
+| Using //config/config.yml as config                                                                |
+|========================================= Redacted Config ==========================================|
+| libraries:                                                                                         |
+|   Movies:                                                                                          |
+|     metadata_path:                                                                                 |
+|       - folder: config/Movies/                                                                     |
+|       - pmm: tmdb                                                                                  |
+|     template_variables:                                                                            |
+|       collection_mode:                                                                             |
+|       collection_section: "01"                                                                     |
+|       summary_trending: A list of trending movies from TMDB                                        |
+|       use_popular: false                                                                           |
+|       use_top: false                                                                               |
+|       use_trending: true                                                                           |
+|       order_trending:                                                                              |
+|       collection_order_trending: custom                                                            |
+|       visible_library_trending:                                                                    |
+|       visible_home_trending:                                                                       |
+|       visible_shared_trending:                                                                     |
+|       limit_trending: 100                                                                          |
+|       vertical_position: bottom                                                                    |
+|       rating_alignment: horizontal                                                                 |
+|       rating1: critic                                                                              |
+|       rating2: user                                                                                |
+|       rating3: audience                                                                            |
+|       rating1_image: rt_tomato                                                                     |
+|       rating2_image: letterboxd                                                                    |
+|       rating3_image: rt_popcorn                                                                    |
+|     overlay_path:                                                                                  |
+|       - remove_overlays: false                                                                     |
+|       - pmm: ratings                                                                               |
+|       - file: config/cam_overlay/CamOverlay.yml                                                    |
+|     operations:                                                                                    |
+|       mass_critic_rating_update: mdb_tomatoes                                                      |
+|       mass_audience_rating_update: mdb_tomatoesaudience                                            |
+|       mass_user_rating_update: mdb_letterboxd                                                      |
+|                                                                                                    |
+|   TV Shows:                                                                                        |
+|     metadata_files:                                                                                |
+|       - folder: config/TV/                                                                         |
+|       - file: config/bb-us-show-label.yml         # optional; not required for blur to work        |
+|     overlay_files:                                                                                 |
+|       - file: config/bb-us-blur-overlay.yml                                                        |
+|     operations:                                                                                    |
+|       delete_collections:                                                                          |
+|         managed: true                                                                              |
+|         configured: true                                                                           |
+|                                                                                                    |
+| settings:                                                                                          |
+|   cache: true                                                                                      |
+|   asset_directory: config/assets                                                                   |
+|   asset_folders: true                                                                              |
+|   asset_depth: 0                                                                                   |
+|   create_asset_folders: true                                                                       |
+|   prioritize_assets: false                                                                         |
+|   dimensional_asset_rename: false                                                                  |
+|   download_url_assets: false                                                                       |
+|   show_missing_season_assets: false                                                                |
+|   show_missing_episode_assets: false                                                               |
+|   show_asset_not_needed: true                                                                      |
+|   sync_mode: sync                                                                                  |
+|   minimum_items: 1                                                                                 |
+|   default_collection_order:                                                                        |
+|   delete_below_minimum: true                                                                       |
+|   delete_not_scheduled: false                                                                      |
+|   run_again_delay: 2                                                                               |
+|   missing_only_released: false                                                                     |
+|   only_filter_missing: false                                                                       |
+|   show_unmanaged: true                                                                             |
+|   show_filtered: false                                                                             |
+|   show_options: false                                                                              |
+|   show_missing: true                                                                               |
+|   show_missing_assets: true                                                                        |
+|   save_report: false                                                                               |
+|   tvdb_language: eng                                                                               |
+|   ignore_ids:                                                                                      |
+|   ignore_imdb_ids:                                                                                 |
+|   item_refresh_delay: 0                                                                            |
+|   playlist_sync_to_user: all                                                                       |
+|   playlist_report: false                                                                           |
+|   verify_ssl: true                                                                                 |
+|   custom_repo:                                                                                     |
+|   check_nightly: false                                                                             |
+|   show_unconfigured: true                                                                          |
+|   playlist_exclude_users:                                                                          |
+|   run_order:                                                                                       |
+|     - operations                                                                                   |
+|     - metadata                                                                                     |
+|     - collections                                                                                  |
+|     - overlays                                                                                     |
+|   overlay_artwork_filetype: jpg                                                                    |
+|   overlay_artwork_quality:                                                                         |
+|   cache_expiration: 60                                                                             |
+|   show_unfiltered: false                                                                           |
+|                                                                                                    |
+| webhooks:                                                                                          |
+|   error:                                                                                           |
+|   version:                                                                                         |
+|   run_start:                                                                                       |
+|   run_end:                                                                                         |
+|   changes:                                                                                         |
+|   delete:                                                                                          |
+|                                                                                                    |
+| plex:                                                                                              |
+|   url: (redacted)                                                                                  |
+|   token: (redacted)                                                                                |
+|   timeout: 60                                                                                      |
+|   clean_bundles: false                                                                             |
+|   empty_trash: false                                                                               |
+|   optimize: false                                                                                  |
+|   db_cache:                                                                                        |
+|   verify_ssl:                                                                                      |
+|                                                                                                    |
+| tmdb:                                                                                              |
+|   apikey: (redacted)                                                                               |
+|   language: en                                                                                     |
+|   cache_expiration: 60                                                                             |
+|   region:                                                                                          |
+|                                                                                                    |
+| tautulli:                                                                                          |
+|   url: (redacted)                                                                                  |
+|   apikey: (redacted)                                                                               |
+|                                                                                                    |
+| omdb:                                                                                              |
+|   apikey: (redacted)                                                                               |
+|   cache_expiration: 60                                                                             |
+|                                                                                                    |
+| mdblist:                                                                                           |
+|   apikey: (redacted)                                                                               |
+|   cache_expiration: 60                                                                             |
+|                                                                                                    |
+| notifiarr:                                                                                         |
+|   apikey: (redacted)                                                                               |
+|                                                                                                    |
+| anidb:                                                                                             |
+|   username: (redacted)                                                                             |
+|   password: (redacted)                                                                             |
+|   language: en                                                                                     |
+|   client:                                                                                          |
+|                                                                                                    |
+| radarr:                                                                                            |
+|   url: (redacted)                                                                                  |
+|   token: (redacted)                                                                                |
+|   add_missing: false                                                                               |
+|   add_existing: false                                                                              |
+|   root_folder_path: S:/Movies                                                                      |
+|   monitor: true                                                                                    |
+|   availability: announced                                                                          |
+|   quality_profile: HD-1080p                                                                        |
+|   tag:                                                                                             |
+|   search: false                                                                                    |
+|   radarr_path:                                                                                     |
+|   plex_path:                                                                                       |
+|   upgrade_existing: false                                                                          |
+|   ignore_cache: false                                                                              |
+|   monitor_existing: false                                                                          |
+|                                                                                                    |
+| sonarr:                                                                                            |
+|   url: (redacted)                                                                                  |
+|   token: (redacted)                                                                                |
+|   add_missing: false                                                                               |
+|   add_existing: false                                                                              |
+|   root_folder_path: S:/TV Shows                                                                    |
+|   monitor: all                                                                                     |
+|   quality_profile: HD-1080p                                                                        |
+|   language_profile: English                                                                        |
+|   series_type: standard                                                                            |
+|   season_folder: true                                                                              |
+|   tag:                                                                                             |
+|   search: false                                                                                    |
+|   cutoff_search: false                                                                             |
+|   sonarr_path:                                                                                     |
+|   plex_path:                                                                                       |
+|   upgrade_existing: false                                                                          |
+|   ignore_cache: false                                                                              |
+|   monitor_existing: false                                                                          |
+|                                                                                                    |
+| trakt:                                                                                             |
+|   client_id: (redacted)                                                                            |
+|   client_secret: (redacted)                                                                        |
+|   pin:                                                                                             |
+|   authorization:                                                                                   |
+|     access_token: (redacted)                                                                       |
+|     token_type: Bearer                                                                             |
+|     expires_in: 7889238                                                                            |
+|     refresh_token: (redacted)                                                                      |
+|     scope: public                                                                                  |
+|     created_at: 1751439640                                                                         |
+|   # force_refresh:  # (optional; remove or set true/false if you intend to use it)                 |
+|                                                                                                    |
+| mal:                                                                                               |
+|   client_id: (redacted)                                                                            |
+|   client_secret: (redacted)                                                                        |
+|   authorization:                                                                                   |
+|     access_token:                                                                                  |
+|     token_type:                                                                                    |
+|     expires_in:                                                                                    |
+|     refresh_token:                                                                                 |
+|                                                                                                    |
+| Config Warning: metadata_path has been deprecated and split into collection_files and metadata_files, Please visit the wiki to learn more about this transition. |
+| Config Warning: overlay_path has been deprecated in favor of overlay_files, Please visit the wiki to learn more about this transition. |
+| Config Warning: settings sub-attribute overlay_artwork_quality is blank using 90 as default        |
+|====================================================================================================|
+| Initializing cache database at //config/config.cache                                               |
+|====================================================================================================|
+| Connecting to Notifiarr...                                                                         |
+| Notifiarr Connection Successful                                                                    |
+| gotify attribute not found                                                                         |
+| ntfy attribute not found                                                                           |
+|====================================================================================================|
+| Connecting to TMDb...                                                                              |
+| TMDb Connection Successful                                                                         |
+|====================================================================================================|
+| Connecting to OMDb...                                                                              |
+| OMDb Connection Successful                                                                         |
+|====================================================================================================|
+| Connecting to MDBList...                                                                           |
+| Supporter Key: False                                                                               |
+| Daily API requests: 1000                                                                           |
+| MDBList Connection Successful                                                                      |
+|====================================================================================================|
+| Connecting to Trakt...                                                                             |
+| Config Warning: trakt sub-attribute force_refresh not found using None as default                  |
+| trakt sub-attribute force_refresh added to config                                                  |
+| Trakt Connection Successful                                                                        |
+|====================================================================================================|
+| Connecting to My Anime List...                                                                     |
+| Config Error: mal sub-attribute client_id is blank                                                 |
+| My Anime List Connection Failed                                                                    |
+|====================================================================================================|
+| Connecting to AniDB...                                                                             |
+| Config Error: anidb sub-attribute client is blank                                                  |
+| AniDB API Connection Failed                                                                        |
+| Config Error: anidb sub-attribute username is blank                                                |
+| AniDB Login Failed Continuing as Guest                                                             |
+|====================================================================================================|
+| playlist_files attribute not found                                                                 |
+|====================================================================================================|
+| Connecting to Plex Libraries...                                                                    |
+|====================================================================================================|
+|                                       TV Shows Configuration                                       |
+|====================================================================================================|
+|                                                                                                    |
+| Connecting to TV Shows Library...                                                                  |
+|===================================== Operation Configuration ======================================|
+|                                                                                                    |
+| Operation 1/1                                                                                      |
+|     delete_collections: {'managed': True, 'configured': True}                                      |
+| Config Warning: less attribute not found using None as default                                     |
+| Config Warning: ignore_empty_smart_collections attribute not found using True as default           |
+|                                                                                                    |
+| Reading in Metadata Files                                                                          |
+|                                                                                                    |
+| Reading folder: config/TV/                                                                         |
+|                                                                                                    |
+| Reading file: config/bb-us-show-label.yml                                                          |
+|                                                                                                    |
+| Reading in Overlay Files                                                                           |
+|                                                                                                    |
+| Reading file: config/bb-us-blur-overlay.yml                                                        |
+|                                                                                                    |
+|======================================== Plex Configuration ========================================|
+|                                                                                                    |
+| Using Asset Directory: config/assets                                                               |
+| Connected to server BzzSrvr version 1.42.1.10060-4e8b05daf                                         |
+| Running on Linux version 6.6.78-Unraid                                                             |
+| Plex DB cache setting: 40 MB                                                                       |
+| PlexPass: True on Public update channel.                                                           |
+| Scheduled maintenance running between 2:00 and 5:00                                                |
+| Connected to library TV Shows                                                                      |
+| Type: Show                                                                                         |
+| Agent: tv.plex.agents.series                                                                       |
+| Scanner: Plex TV Series                                                                            |
+| Ratings Source: N/A                                                                                |
+|                                                                                                    |
+| TV Shows Library Connection Successful                                                             |
+|                                                                                                    |
+|========================================== Scanning Files ==========================================|
+|                                                                                                    |
+|======================================= Radarr Configuration =======================================|
+|                                                                                                    |
+| Connecting to TV Shows library's Radarr...                                                         |
+|                                                                                                    |
+| Traceback (most recent call last):                                                                 |
+|   File "/modules/radarr.py", line 27, in __init__                                                  |
+|     self.api._validate_add_options(params["root_folder_path"], params["quality_profile"]) # noqa   |
+|     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^          |
+|   File "/usr/local/lib/python3.13/site-packages/arrapi/apis/radarr.py", line 29, in _validate_add_options |
+|     "root_folder": self._validate_root_folder(root_folder),                                        |
+|                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^                                         |
+|   File "/usr/local/lib/python3.13/site-packages/arrapi/apis/base.py", line 195, in _validate_root_folder |
+|     raise Invalid(f"Invalid Root Folder: '{root_folder}' Options: {options}")                      |
+| arrapi.exceptions.Invalid: Invalid Root Folder: 'S:/Movies' Options: [[3:/data/media/movies], [4:/data/media/movies_hallmark_lifetime]] |
+|                                                                                                    |
+| During handling of the above exception, another exception occurred:                                |
+|                                                                                                    |
+| Traceback (most recent call last):                                                                 |
+|   File "/modules/config.py", line 1262, in __init__                                                |
+|     library.Radarr = Radarr(self.Requests, self.Cache, library, {                                  |
+|                      ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                  |
+|         "url": check_for_attribute(lib, "url", parent="radarr", var_type="url", default=self.general["radarr"]["url"], req_default=True, save=False), |
+|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
+|     ...<13 lines>...                                                                               |
+|         "plex_path": check_for_attribute(lib, "plex_path", parent="radarr", default=self.general["radarr"]["plex_path"], default_is_none=True, save=False) |
+|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
+|     })                                                                                             |
+|     ^^                                                                                             |
+|   File "/modules/radarr.py", line 30, in __init__                                                  |
+|     raise Failed(e)                                                                                |
+| modules.util.Failed: Invalid Root Folder: 'S:/Movies' Options: [[3:/data/media/movies], [4:/data/media/movies_hallmark_lifetime]] |
+|                                                                                                    |
+| Invalid Root Folder: 'S:/Movies' Options: [[3:/data/media/movies], [4:/data/media/movies_hallmark_lifetime]] |
+|                                                                                                    |
+| TV Shows library's Radarr Connection Failed                                                        |
+|                                                                                                    |
+|======================================= Sonarr Configuration =======================================|
+|                                                                                                    |
+| Connecting to TV Shows library's Sonarr...                                                         |
+|                                                                                                    |
+| Traceback (most recent call last):                                                                 |
+|   File "/modules/sonarr.py", line 43, in __init__                                                  |
+|     self.api._validate_add_options(params["root_folder_path"], params["quality_profile"], params["language_profile"]) # noqa |
+|     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
+|   File "/usr/local/lib/python3.13/site-packages/arrapi/apis/sonarr.py", line 30, in _validate_add_options |
+|     "root_folder": self._validate_root_folder(root_folder),                                        |
+|                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^                                         |
+|   File "/usr/local/lib/python3.13/site-packages/arrapi/apis/base.py", line 195, in _validate_root_folder |
+|     raise Invalid(f"Invalid Root Folder: '{root_folder}' Options: {options}")                      |
+| arrapi.exceptions.Invalid: Invalid Root Folder: 'S:/TV Shows' Options: [[4:/data/media/tv]]        |
+|                                                                                                    |
+| During handling of the above exception, another exception occurred:                                |
+|                                                                                                    |
+| Traceback (most recent call last):                                                                 |
+|   File "/modules/config.py", line 1292, in __init__                                                |
+|     library.Sonarr = Sonarr(self.Requests, self.Cache, library, {                                  |
+|                      ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                  |
+|         "url": check_for_attribute(lib, "url", parent="sonarr", var_type="url", default=self.general["sonarr"]["url"], req_default=True, save=False), |
+|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
+|     ...<16 lines>...                                                                               |
+|         "plex_path": check_for_attribute(lib, "plex_path", parent="sonarr", default=self.general["sonarr"]["plex_path"], default_is_none=True, save=False) |
+|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
+|     })                                                                                             |
+|     ^^                                                                                             |
+|   File "/modules/sonarr.py", line 46, in __init__                                                  |
+|     raise Failed(e)                                                                                |
+| modules.util.Failed: Invalid Root Folder: 'S:/TV Shows' Options: [[4:/data/media/tv]]              |
+|                                                                                                    |
+| Invalid Root Folder: 'S:/TV Shows' Options: [[4:/data/media/tv]]                                   |
+|                                                                                                    |
+| TV Shows library's Sonarr Connection Failed                                                        |
+|                                                                                                    |
+|====================================== Tautulli Configuration ======================================|
+|                                                                                                    |
+| Connecting to TV Shows library's Tautulli...                                                       |
+|                                                                                                    |
+| Traceback (most recent call last):                                                                 |
+|   File "/modules/config.py", line 1325, in __init__                                                |
+|     library.Tautulli = Tautulli(self.Requests, library, {                                          |
+|                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^                                          |
+|         "url": check_for_attribute(lib, "url", parent="tautulli", var_type="url", default=self.general["tautulli"]["url"], req_default=True, save=False), |
+|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
+|         "apikey": check_for_attribute(lib, "apikey", parent="tautulli", default=self.general["tautulli"]["apikey"], req_default=True, save=False) |
+|         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
+|     })                                                                                             |
+|     ^^                                                                                             |
+|   File "/modules/tautulli.py", line 25, in __init__                                                |
+|     raise Failed(f"Tautulli Error: {response['response']['message']}")                             |
+| modules.util.Failed: Tautulli Error: Invalid apikey                                                |
+|                                                                                                    |
+| Tautulli Error: Invalid apikey                                                                     |
+|                                                                                                    |
+| TV Shows library's Tautulli Connection Failed                                                      |
+|                                                                                                    |
+|====================================================================================================|
+| 1 Plex Library Connection Successful                                                               |
+|====================================================================================================|
+|                                                                                                    |
+|====================================================================================================|
+|                                          TV Shows Library                                          |
+|====================================================================================================|
+|                                                                                                    |
+| Library Name: TV Shows                                                                             |
+| Run Order: operations, metadata, collections, overlays                                             |
+| Folder Name: TV Shows                                                                              |
+| Asset Directory: config/assets                                                                     |
+| Asset Folders: True                                                                                |
+| Asset Depth: 0                                                                                     |
+| Create Asset Folders: True                                                                         |
+| Prioritize Assets: False                                                                           |
+| Dimensional Asset Rename: False                                                                    |
+| Download URL Assets: False                                                                         |
+| Show Missing Assets: True                                                                          |
+| Show Missing Season Assets: False                                                                  |
+| Show Missing Episode Assets: False                                                                 |
+| Show Assets Not Needed: True                                                                       |
+| Sync Mode: sync                                                                                    |
+| Minimum Items: 1                                                                                   |
+| Delete Below Minimum: True                                                                         |
+| Delete Not Scheduled: False                                                                        |
+| Default Collection Order: None                                                                     |
+| Missing Only Released: False                                                                       |
+| Only Filter Missing: False                                                                         |
+| Show Unmanaged: True                                                                               |
+| Show Unconfigured: True                                                                            |
+| Show Filtered: False                                                                               |
+| Show Unfiltered: False                                                                             |
+| Show Options: False                                                                                |
+| Show Missing: True                                                                                 |
+| Save Report: False                                                                                 |
+| Report Path: //config/TV Shows_report.yml                                                          |
+| Ignore IDs: []                                                                                     |
+| Ignore IMDb IDs: []                                                                                |
+| Item Refresh Delay: 0                                                                              |
+| Clean Bundles: False                                                                               |
+| Empty Trash: False                                                                                 |
+| Optimize: False                                                                                    |
+| Timeout: 60                                                                                        |
+|                                                                                                    |
+|================================== Caching TV Shows Library Items ==================================|
+|                                                                                                    |
+| Loading All Shows from Library: TV Shows                                                           |
+| Loaded: 100/603| Loaded: 200/603| Loaded: 300/603| Loaded: 400/603| Loaded: 500/603| Loaded: 600/603| Loaded: 603/603                 | Loaded 603 Shows                                                                                   |
+|                                                                                                    |
+|===================================== Mapping TV Shows Library =====================================|
+|                                                                                                    |
+| Processing: 1/603 11.22.63| Processing: 2/603 20/20   | Processing: 3/603 61st Street| Processing: 4/603 100 Foot Wave| Processing: 5/603 1923         | Processing: 6/603 Abbott Elementary| Processing: 7/603 Adventure Time   | Processing: 8/603 Adventure Time: Distant Lands| Processing: 9/603 After The Flood              | Processing: 10/603 Alone         | Processing: 11/603 Alone: Frozen| Processing: 12/603 Alphablocks  | Processing: 13/603 The Amazing Race| Processing: 14/603 The American Buffalo| Processing: 15/603 American Gigolo     | Processing: 16/603 American Murder: Gabby Petito| Processing: 17/603 American Nightmare (2024)    | Processing: 18/603 Amphibia                 | Processing: 19/603 Amy Bradley Is Missing| Processing: 20/603 Anatomy of Lies       | Processing: 21/603 Andor          | Processing: 22/603 The Andy Griffith Show| Processing: 23/603 The Angry Beavers     | Processing: 24/603 Apples Never Fall| Processing: 25/603 Arcane           | Processing: 26/603 Are You Afraid of the Dark?| Processing: 27/603 Ariel                      | Processing: 28/603 Arrested Development| Processing: 29/603 At Witt's End: The Hunt for a Killer| Processing: 30/603 Atlanta                             | Processing: 31/603 Attack on Titan| Processing: 32/603 B.J. and the Bear| Processing: 33/603 Baby Reindeer    | Processing: 34/603 The Backyardigans| Processing: 35/603 Bad Sisters      | Processing: 36/603 Bad Surgeon: Love Under the Knife| Processing: 37/603 Ballard                          | Processing: 38/603 Band of Brothers| Processing: 39/603 Banshee         | Processing: 40/603 Barney and Friends| Processing: 41/603 Barry             | Processing: 42/603 Baseball| Processing: 43/603 Batman: The Animated Series| Processing: 44/603 BattleBots (2015)          | Processing: 45/603 BattleBots Resurrection| Processing: 46/603 BattleBots: Bounty Hunters| Processing: 47/603 The Bay (2019)            | Processing: 48/603 The Bear      | Processing: 49/603 BEEF    | Processing: 50/603 Below Deck| Processing: 51/603 Below Deck Down Under| Processing: 52/603 Better Call Saul     | Processing: 53/603 The Beverly Hillbillies| Processing: 54/603 Beyond Belief: Fact or Fiction| Processing: 55/603 Beyond Oak Island             | Processing: 56/603 The Big Bang Theory| Processing: 57/603 Big Brother                                        | Mapping Error | plex://show/645ff4b7b7cd90c6c0459a1a           | Refresh Metadata for "Big Brother" |
+| Processing: 58/603 Big Brother (US)| Processing: 59/603 Big Brother Reindeer Games| Processing: 60/603 Big City Greens           | Processing: 61/603 The Big Door Prize| Processing: 62/603 Big Little Lies   | Processing: 63/603 Big Sky (2020) | Processing: 64/603 Bill Nye: The Science Guy| Processing: 65/603 Biography: WWE Legends   | Processing: 66/603 Black Bird            | Processing: 67/603 Black Snow| Processing: 68/603 Blaze and the Monster Machines| Processing: 69/603 Blue Lights                   | Processing: 70/603 The Blue Planet| Processing: 71/603 Blue Planet II | Processing: 72/603 Blue's Clues  | Processing: 73/603 Bluey (2018)| Processing: 74/603 Bluey Minisodes| Processing: 75/603 Bob's Burgers  | Processing: 76/603 A Body In The Snow: The Trial of Karen Read| Processing: 77/603 Bonanza                                    | Processing: 78/603 The Book of Boba Fett| Processing: 79/603 The Book of Negroes  | Processing: 80/603 Bosch              | Processing: 81/603 Bosch: Legacy| Processing: 82/603 Boy Meets World| Processing: 83/603 The Boys       | Processing: 84/603 The Brady Bunch| Processing: 85/603 Breaking Bad   | Processing: 86/603 Bridgerton  | Processing: 87/603 Broad City| Processing: 88/603 Brooklyn Nine-Nine| Processing: 89/603 A Brutal Pact: The Murder of Daniella Perez| Processing: 90/603 Bubble Guppies                             | Processing: 91/603 Burden of Proof (2023)| Processing: 92/603 Buried (2021)         | Processing: 93/603 The Busy World of Richard Scarry| Processing: 94/603 Call the Midwife                | Processing: 95/603 The Calling     | Processing: 96/603 The Case Against Adnan Syed| Processing: 97/603 Casey Anthony: Where The Truth Lies| Processing: 98/603 Castle (2009)                      | Processing: 99/603 Celebrity Big Brother (US)| Processing: 100/603 Chainsaw Man             | Processing: 101/603 The Challenge| Processing: 102/603 The Challenge: All Stars| Processing: 103/603 The Challenge: USA      | Processing: 104/603 Cheers            | Processing: 105/603 Chernobyl| Processing: 106/603 The Chi  | Processing: 107/603 Chicago Fire| Processing: 108/603 Chicago P.D.| Processing: 109/603 The Chosen  | Processing: 110/603 City on a Hill| Processing: 111/603 The Civil War | Processing: 112/603 Claim to Fame| Processing: 113/603 Clash of Warriors                                       | Mapping Error | plex://show/62b852ffea06a1427cb99e4c           | Refresh Metadata for "Clash of Warriors" |
+| Processing: 114/603 Cold Case: Who Killed JonBenét Ramsey | Processing: 115/603 Community                             | Processing: 116/603 A Confession| Processing: 117/603 Confronting a Serial Killer| Processing: 118/603 Cosmos (2014)              | Processing: 119/603 Couples Therapy (2019)| Processing: 120/603 Cowboy Bebop          | Processing: 121/603 Crazy Ex-Girlfriend| Processing: 122/603 The Creature Cases | Processing: 123/603 The Crime of the Century| Processing: 124/603 Criminal Minds          | Processing: 125/603 The Crocodile Hunter| Processing: 126/603 Cross               | Processing: 127/603 The Crown| Processing: 128/603 Cunk & Other Humans on 2019| Processing: 129/603 Cunk on Britain            | Processing: 130/603 The Curse      | Processing: 131/603 The Curse of Oak Island| Processing: 132/603 Daisy Jones and The Six| Processing: 133/603 Dan Brown's The Lost Symbol| Processing: 134/603 Danny Phantom              | Processing: 135/603 Dark Matter (2024)| Processing: 136/603 Dark Side of the Ring| Processing: 137/603 Dark Winds           | Processing: 138/603 DAVE      | Processing: 139/603 David Attenborough's First Life| Processing: 140/603 DCI Banks                      | Processing: 141/603 The Dead Zone| Processing: 142/603 Death and Nightingales| Processing: 143/603 Death and Other Details| Processing: 144/603 Dennis the Menace      | Processing: 145/603 Derry Girls      | Processing: 146/603 Descendants: Wicked World| Processing: 147/603 Detroiters               | Processing: 148/603 Dexter: New Blood| Processing: 149/603 Dexter: Original Sin| Processing: 150/603 Dexter: Resurrection| Processing: 151/603 Dimension 20        | Processing: 152/603 The Diplomat| Processing: 153/603 A Discovery of Witches| Processing: 154/603 The Disney Holiday Singalong                                                  | Mapping Error | local://70974                                  | No match in Plex for "The Disney Holiday Singalong" |
+| Processing: 155/603 Doctor Foster| Processing: 156/603 Dora the Explorer| Processing: 157/603 Doug             | Processing: 158/603 Dragon Ball| Processing: 159/603 Drops of God| Processing: 160/603 Dublin Murders| Processing: 161/603 Duck Dynasty: The Revival| Processing: 162/603 The Dukes of Hazzard     | Processing: 163/603 Dynasties (2018)    | Processing: 164/603 Earth Abides    | Processing: 165/603 Eastbound & Down| Processing: 166/603 Emily in Paris  | Processing: 167/603 Escobar by Escobar| Processing: 168/603 Euphoria (US)     | Processing: 169/603 Everybody Loves Raymond| Processing: 170/603 The Expanse            | Processing: 171/603 Exterminate All the Brutes| Processing: 172/603 Extracted                 | Processing: 173/603 Extras   | Processing: 174/603 The Falcon and The Winter Soldier| Processing: 175/603 Fallout                          | Processing: 176/603 Fargo  | Processing: 177/603 FBoy Island| Processing: 178/603 FC Cincinnati Weekly                                          | Mapping Error | plex://show/63f6d127ce07f921459e4fdd           | Refresh Metadata for "FC Cincinnati Weekly" |
+| Processing: 179/603 Fight Quest| Processing: 180/603 The Final Quarter                                       | Mapping Error | tv.plex.agents.none://9781                     | Agent none not supported for "The Final Quarter" |
+| Processing: 181/603 Finding Mr. Christmas| Processing: 182/603 Fire Country         | Processing: 183/603 Firefly     | Processing: 184/603 Fleabag| Processing: 185/603 For All Mankind| Processing: 186/603 Foundation (2021)| Processing: 187/603 FOX19 Morning Xtra                                        | Mapping Error | tv.plex.xmltv://show/FOX19%20Morning%20Xtra    | Agent xmltv not supported for "FOX19 Morning Xtra" |
+| Processing: 188/603 FOX19 NOW at 7                                    | Mapping Error | tv.plex.xmltv://show/FOX19%20NOW%20at%207      | Agent xmltv not supported for "FOX19 NOW at 7" |
+| Processing: 189/603 Frasier| Processing: 190/603 Friends| Processing: 191/603 Fringe | Processing: 192/603 FROM  | Processing: 193/603 Frozen Planet II| Processing: 194/603 Full House      | Processing: 195/603 Futurama  | Processing: 196/603 Future Man| Processing: 197/603 Gabby's Dollhouse| Processing: 198/603 Game Changer     | Processing: 199/603 Game of Thrones| Processing: 200/603 George Carlin's American Dream| Processing: 201/603 Ghosts (2019)                 | Processing: 202/603 Ghosts (US)  | Processing: 203/603 The Gilded Age| Processing: 204/603 Gilligan's Island| Processing: 205/603 Gilmore Girls    | Processing: 206/603 Ginny & Georgia| Processing: 207/603 Godfather of Harlem| Processing: 208/603 Going Dutch        | Processing: 209/603 The Gold   | Processing: 210/603 The Golden Girls| Processing: 211/603 Goliath         | Processing: 212/603 Gomer Pyle, U.S.M.C.| Processing: 213/603 Gone Girls: The Long Island Serial Killer| Processing: 214/603 The Good Doctor                          | Processing: 215/603 The Good Place | Processing: 216/603 Goosebumps    | Processing: 217/603 Gordon Ramsay’s Secret Service| Processing: 218/603 Grace (2021)                  | Processing: 219/603 Gravity Falls| Processing: 220/603 The Great    | Processing: 221/603 The Great British Bake Off| Processing: 222/603 The Great Pottery Throw Down| Processing: 223/603 Green Acres                 | Processing: 224/603 Grey's Anatomy| Processing: 225/603 The Grim Adventures of Billy & Mandy| Processing: 226/603 Gunsmoke                            | Processing: 227/603 Hacks (2021)| Processing: 228/603 Halo        | Processing: 229/603 Halt and Catch Fire| Processing: 230/603 The Handmaid's Tale| Processing: 231/603 Handy Manny        | Processing: 232/603 Happy Valley| Processing: 233/603 Hard Knocks: Training Camp| Processing: 234/603 HarmonQuest               | Processing: 235/603 Helpsters  | Processing: 236/603 Hemingway| Processing: 237/603 Her Last Broadcast: The Abduction of Jodi Huisentruit| Processing: 238/603 Hidden Assets                                        | Processing: 239/603 Hightown     | Processing: 240/603 Hijack  | Processing: 241/603 Hilda | Processing: 242/603 Hillsong: A Megachurch Exposed| Processing: 243/603 Hinterland                    | Processing: 244/603 His Dark Materials| Processing: 245/603 History's Greatest Mysteries| Processing: 246/603 Home Improvement            | Processing: 247/603 Homestead: The Series| Processing: 248/603 Homicide: Life on the Street| Processing: 249/603 Horrible Histories (2009)   | Processing: 250/603 House of Hammer          | Processing: 251/603 House of the Dragon| Processing: 252/603 House of Villains  | Processing: 253/603 Houses of Horror: Secrets of College Greek Life| Processing: 254/603 How I Met Your Mother                          | Processing: 255/603 How It's Made        | Processing: 256/603 How To with John Wilson| Processing: 257/603 The Hunt               | Processing: 258/603 I Love Lucy| Processing: 259/603 I Love You, You Hate Me| Processing: 260/603 I Think You Should Leave with Tim Robinson| Processing: 261/603 Ice Age: Scrat Tales                      | Processing: 262/603 IMPACT x Nightline  | Processing: 263/603 Impractical Jokers| Processing: 264/603 In Living Color   | Processing: 265/603 Infinity Train | Processing: 266/603 Into the Fire: The Lost Daughter| Processing: 267/603 Invasion (2021)                 | Processing: 268/603 Invincible     | Processing: 269/603 The Ipcress File| Processing: 270/603 Irvine Welsh's Crime| Processing: 271/603 Iwájú               | Processing: 272/603 Jackie Chan Adventures| Processing: 273/603 Jane the Virgin       | Processing: 274/603 Jeffrey Epstein: Filthy Rich| Processing: 275/603 Jeopardy!                   | Processing: 276/603 Jersey Shore: Family Vacation| Processing: 277/603 The Jinx                     | Processing: 278/603 Joe Pera Talks with You| Processing: 279/603 JUJUTSU KAISEN         | Processing: 280/603 Julia (2022)  | Processing: 281/603 Jury Duty   | Processing: 282/603 Justified| Processing: 283/603 Justified: City Primeval| Processing: 284/603 Karen Pirie             | Processing: 285/603 Kevin Can F**k Himself| Processing: 286/603 Killing It (2022)     | Processing: 287/603 Kin              | Processing: 288/603 The King of Queens| Processing: 289/603 King of the Hill  | Processing: 290/603 Kipo and the Age of Wonderbeasts| Processing: 291/603 Knots Landing                   | Processing: 292/603 Knuckles     | Processing: 293/603 Krapopolis| Processing: 294/603 Landman   | Processing: 295/603 The Last Dance| Processing: 296/603 The Last Man on Earth| Processing: 297/603 The Last Movie Stars | Processing: 298/603 The Last of Us      | Processing: 299/603 The Last Thing He Told Me| Processing: 300/603 Law & Order: Special Victims Unit| Processing: 301/603 Lawmen: Bass Reeves              | Processing: 302/603 Leave It to Beaver | Processing: 303/603 LEGO Masters (US) | Processing: 304/603 Let's Go Luna!   | Processing: 305/603 Letterkenny   | Processing: 306/603 Lewis and Clark: The Journey of the Corps of Discovery| Processing: 307/603 Life                                                  | Processing: 308/603 Life on Our Planet| Processing: 309/603 Lincoln's Dilemma | Processing: 310/603 Line of Duty     | Processing: 311/603 Lioness     | Processing: 312/603 Loki   | Processing: 313/603 The Lord of the Rings: The Rings of Power| Processing: 314/603 Lost                                     | Processing: 315/603 Love & Death| Processing: 316/603 Lucas the Spider| Processing: 317/603 Ludwig (2024)   | Processing: 318/603 M*A*S*H                                   | Mapping Error | plex://show/5fc6ac1275bdc2002e9e4984           | Refresh Metadata for "M*A*S*H"    |
+| Processing: 319/603 Macy's Thanksgiving Day Parade| Processing: 320/603 The Magic School Bus          | Processing: 321/603 Make Some Noise     | Processing: 322/603 A Man on the Inside| Processing: 323/603 The Man Who Fell to Earth| Processing: 324/603 The Mandalorian          | Processing: 325/603 Manhunt (2017) | Processing: 326/603 Manifest      | Processing: 327/603 Marcial Maciel: The Wolf of God| Processing: 328/603 Mare of Easttown               | Processing: 329/603 The Marvelous Mrs. Maisel| Processing: 330/603 Mastermind: To Think Like a Killer| Processing: 331/603 Masters of the Air                | Processing: 332/603 Mayor of Kingstown| Processing: 333/603 McMillion$        | Processing: 334/603 The Me You Can't See| Processing: 335/603 Mickey Mouse        | Processing: 336/603 Mickey Mouse Clubhouse| Processing: 337/603 Mickey Mouse Funhouse | Processing: 338/603 Mickey Mouse: Mixed-Up Adventures| Processing: 339/603 MINDHUNTER                       | Processing: 340/603 Minx      | Processing: 341/603 Miraculous: Tales of Ladybug & Cat Noir| Processing: 342/603 Miranda                                | Processing: 343/603 Mls Soccer                                | Mapping Error | local://8079                                   | No match in Plex for "Mls Soccer" |
+| Processing: 344/603 MobLand| Processing: 345/603 Monsieur Spade| Processing: 346/603 Monster (2022)| Processing: 347/603 Monsters at Work| Processing: 348/603 Moon Knight     | Processing: 349/603 The Morning Show| Processing: 350/603 Mountain Men    | Processing: 351/603 Mr Inbetween| Processing: 352/603 Mr. Corman  | Processing: 353/603 Mr. Robot | Processing: 354/603 Ms Rachel - Songs for Littles - Toddler Learning Videos| Processing: 355/603 Muhammad Ali                                           | Processing: 356/603 The Munsters| Processing: 357/603 Murderbot   | Processing: 358/603 Murderville| Processing: 359/603 My Brother, My Brother and Me| Processing: 360/603 My Name Is Earl              | Processing: 361/603 Mythic Quest   | Processing: 362/603 Naked and Afraid: Last One Standing| Processing: 363/603 Naked and Afraid: Solo             | Processing: 364/603 Nathan for You        | Processing: 365/603 NBC Nightly News With Lester Holt                                                       | Mapping Error | plex://show/5fc696fb6b022a002d6e5585           | Refresh Metadata for "NBC Nightly News With Lester Holt" |
+| Processing: 366/603 Neymar: The Perfect Chaos| Processing: 367/603 NFL Football                                               | Mapping Error | local://66967                                  | No match in Plex for "NFL Football" |
+| Processing: 368/603 The North Water| Processing: 369/603 Numberblocks   | Processing: 370/603 Nurse Jackie| Processing: 371/603 Obi-Wan Kenobi| Processing: 372/603 Octonauts     | Processing: 373/603 The Office (US)| Processing: 374/603 Olaf Presents  | Processing: 375/603 The Old Man  | Processing: 376/603 Once Upon a Time in Northern Ireland| Processing: 377/603 One Night in Idaho: The College Murders| Processing: 378/603 Only Murders in the Building           | Processing: 379/603 Onside: Major League Soccer | Processing: 380/603 The Orville                | Processing: 381/603 The Other Two| Processing: 382/603 Our Flag Means Death| Processing: 383/603 Outer Banks         | Processing: 384/603 Outlander  | Processing: 385/603 Over the Garden Wall| Processing: 386/603 The Owl House       | Processing: 387/603 P-Valley     | Processing: 388/603 Parks and Recreation| Processing: 389/603 Party Down          | Processing: 390/603 Patriot   | Processing: 391/603 Paw Patrol| Processing: 392/603 Payback (2023)| Processing: 393/603 Peacemaker    | Processing: 394/603 Pee-Wee as Himself| Processing: 395/603 PEN15             | Processing: 396/603 Peppa Pig| Processing: 397/603 Percy Jackson and the Olympians| Processing: 398/603 A Perfect Planet               | Processing: 399/603 Petticoat Junction| Processing: 400/603 Pimp My Ride      | Processing: 401/603 The Pitt    | Processing: 402/603 Pixar Popcorn| Processing: 403/603 PJ Masks     | Processing: 404/603 Planet Dinosaur| Processing: 405/603 Planet Earth   | Processing: 406/603 Planet Earth II| Processing: 407/603 Pokémon        | Processing: 408/603 Pokémon Concierge| Processing: 409/603 Pokémon: Origins | Processing: 410/603 Poker Face      | Processing: 411/603 Portlandia| Processing: 412/603 Portrait Artist of the Year| Processing: 413/603 Power Rangers              | Processing: 414/603 Prehistoric Planet (2022)| Processing: 415/603 Presumed Innocent        | Processing: 416/603 Pretty Little Liars (2022)| Processing: 417/603 The Problem With Jon Stewart| Processing: 418/603 Prohibition                 | Processing: 419/603 Project Runway| Processing: 420/603 Puffin Rock   | Processing: 421/603 Queen of Meth| Processing: 422/603 The Queen's Gambit| Processing: 423/603 Quiet on Set: The Dark Side of Kids TV| Processing: 424/603 Quiz                                  | Processing: 425/603 Rabbit Hole| Processing: 426/603 Race: Bubba Wallace| Processing: 427/603 Reacher            | Processing: 428/603 The Rehearsal| Processing: 429/603 The Reluctant Traveler with Eugene Levy| Processing: 430/603 Reno 911!                              | Processing: 431/603 Reservation Dogs| Processing: 432/603 The Responder   | Processing: 433/603 Revolting Rhymes| Processing: 434/603 Rick and Morty  | Processing: 435/603 Ridiculousness| Processing: 436/603 The Righteous Gemstones| Processing: 437/603 Rise of the Nazis      | Processing: 438/603 Rocket Power     | Processing: 439/603 RuPaul's Drag Race| Processing: 440/603 RuPaul's Drag Race All Stars| Processing: 441/603 RuPaul's Drag Race: Untucked!| Processing: 442/603 Russian Doll                 | Processing: 443/603 Samurai Jack| Processing: 444/603 Sanditon    | Processing: 445/603 Sanford and Son| Processing: 446/603 The Santa Clauses| Processing: 447/603 SAS Rogue Heroes | Processing: 448/603 Saved by the Bell| Processing: 449/603 Savior Complex   | Processing: 450/603 Schitt's Creek| Processing: 451/603 Schmigadoon!  | Processing: 452/603 Scooby-Doo, Where Are You!| Processing: 453/603 Scooby-Doo! Mystery Incorporated| Processing: 454/603 Scorpion                        | Processing: 455/603 Scott Pilgrim Takes Off| Processing: 456/603 Search Party (2016)    | Processing: 457/603 Secret Invasion    | Processing: 458/603 The Secret Lives of Mormon Wives| Processing: 459/603 The Secrets of Hillsong         | Processing: 460/603 Seinfeld               | Processing: 461/603 The Serpent Queen| Processing: 462/603 Seven Worlds, One Planet| Processing: 463/603 Severance               | Processing: 464/603 Sex and the City| Processing: 465/603 The Sex Lives of College Girls| Processing: 466/603 Shameless (US)                | Processing: 467/603 Shape Island  | Processing: 468/603 Sharp Objects| Processing: 469/603 She-Hulk: Attorney at Law| Processing: 470/603 She-Ra and the Princesses of Power| Processing: 471/603 Sherwood (2022)                   | Processing: 472/603 Shetland       | Processing: 473/603 Shifting Gears| Processing: 474/603 Shiny Happy People| Processing: 475/603 Shōgun            | Processing: 476/603 Shoresy| Processing: 477/603 The Shrink Next Door| Processing: 478/603 Shrinking           | Processing: 479/603 Signs Of A Psychopath| Processing: 480/603 Silo                 | Processing: 481/603 Simone Biles Rising| Processing: 482/603 Six Schizophrenic Brothers| Processing: 483/603 Slow Horses               | Processing: 484/603 SmartLess: On the Road| Processing: 485/603 Smartypants           | Processing: 486/603 So Little Time| Processing: 487/603 Soccer AM     | Processing: 488/603 Sonic Boom| Processing: 489/603 The Sopranos| Processing: 490/603 SpongeBob SquarePants| Processing: 491/603 A Spy Among Friends  | Processing: 492/603 Squid Game         | Processing: 493/603 Squid Game: The Challenge| Processing: 494/603 The Staircase (2022)     | Processing: 495/603 Star Trek: Lower Decks| Processing: 496/603 Star Trek: Prodigy    | Processing: 497/603 Star vs. the Forces of Evil| Processing: 498/603 Star Wars: Clone Wars      | Processing: 499/603 Star Wars: The Clone Wars| Processing: 500/603 Static Shock             | Processing: 501/603 Station Eleven| Processing: 502/603 Steven Universe| Processing: 503/603 Stillwater     | Processing: 504/603 The Story of Film: An Odyssey| Processing: 505/603 Strange Planet               | Processing: 506/603 Succession    | Processing: 507/603 Summer Camp Island| Processing: 508/603 The Summer I Turned Pretty| Processing: 509/603 SuperKitties              | Processing: 510/603 Supernatural| Processing: 511/603 Superstore  | Processing: 512/603 Survivor  | Processing: 513/603 Sweet Magnolias| Processing: 514/603 The Take       | Processing: 515/603 Taken Together: Who Killed Lyric and Elizabeth?| Processing: 516/603 Tanked                                         | Processing: 517/603 Taskmaster| Processing: 518/603 Taskmaster (AU)| Processing: 519/603 Taskmaster (NZ)| Processing: 520/603 Taskmaster Canada| Processing: 521/603 Taylor Swift City of Lover Concert                                                        | Mapping Error | local://9151                                   | No match in Plex for "Taylor Swift City of Lover Concert" |
+| Processing: 522/603 ted| Processing: 523/603 Ted Lasso| Processing: 524/603 Teen Mom OG| Processing: 525/603 Teen Mom: The Next Chapter| Processing: 526/603 Teenage Mutant Ninja Turtles| Processing: 527/603 Teenage Mutant Ninja Turtles (2003)| Processing: 528/603 Tell Me Lies                       | Processing: 529/603 This Is Going To Hurt| Processing: 530/603 Tinka and the King's Game| Processing: 531/603 Tinkas Christmas Adventures| Processing: 532/603 Tokyo Vice                 | Processing: 533/603 Tom Clancy's Jack Ryan| Processing: 534/603 Total Forgiveness     | Processing: 535/603 The Tower (2021) | Processing: 536/603 The Toys That Built America| Processing: 537/603 Traces                     | Processing: 538/603 Tractor Ted (2011)| Processing: 539/603 The Traitors (US) | Processing: 540/603 Transformers: Rescue Bots Academy| Processing: 541/603 Trash Truck                      | Processing: 542/603 Treme      | Processing: 543/603 True Detective| Processing: 544/603 The Tudors    | Processing: 545/603 Tulsa King| Processing: 546/603 Tumble Leaf| Processing: 547/603 The Tunnel | Processing: 548/603 Um, Actually...| Processing: 549/603 Under the Banner of Heaven| Processing: 550/603 Under the Bridge          | Processing: 551/603 Unforgotten     | Processing: 552/603 Unsolved Mysteries                                        | Mapping Error | plex://show/5ef2ab583834ed0041ac0360           | Unable to convert TMDb ID: 105177 to TVDb ID for "Unsolved Mysteries" |
+| Processing: 553/603 Until I Kill You| Processing: 554/603 Vampire Academy | Processing: 555/603 Vanderpump Rules| Processing: 556/603 The Veil        | Processing: 557/603 The Venture Bros.| Processing: 558/603 Veronica Mars    | Processing: 559/603 Very Important People (2023)| Processing: 560/603 Vice Principals             | Processing: 561/603 The Vietnam War (2017)| Processing: 562/603 Virgin River          | Processing: 563/603 Visible: Out on Television| Processing: 564/603 Waco                      | Processing: 565/603 The War| Processing: 566/603 The Way Down: God, Greed, and the Cult of Gwen Shamblin| Processing: 567/603 WCPO 9 News at 6PM                                                                             | Mapping Error | plex://show/5fc69928088e7d002d40d61a           | Refresh Metadata for "WCPO 9 News at 6PM" |
+| Processing: 568/603 We Bare Bears| Processing: 569/603 We Own This City| Processing: 570/603 We Were the Lucky Ones| Processing: 571/603 We're Here            | Processing: 572/603 Wednesday | Processing: 573/603 Welcome to Wrexham| Processing: 574/603 Wellington Paranormal| Processing: 575/603 Westworld            | Processing: 576/603 What We Do in the Shadows| Processing: 577/603 When Calls the Heart     | Processing: 578/603 Where on Earth is Carmen Sandiego?| Processing: 579/603 The White Lotus                   | Processing: 580/603 Who Killed Robert Wone?| Processing: 581/603 Wild Crime             | Processing: 582/603 Wild Kratts| Processing: 583/603 The Winchesters| Processing: 584/603 Winning Time: The Rise of the Lakers Dynasty| Processing: 585/603 The Winter King                             | Processing: 586/603 The Wire       | Processing: 587/603 Wise Guy David Chase and The Sopranos| Processing: 588/603 The Witcher                          | Processing: 589/603 Wizards Beyond Waverly Place| Processing: 590/603 WKRP in Cincinnati          | Processing: 591/603 The Wonderful World of Mickey Mouse| Processing: 592/603 Workaholics                        | Processing: 593/603 WWII in Color: Road to Victory| Processing: 594/603 XO, Kitty                     | Processing: 595/603 Yellowjackets| Processing: 596/603 Yellowstone (2018)| Processing: 597/603 Yo Gabba Gabba!   | Processing: 598/603 Young DAVID    | Processing: 599/603 Your Honor | Processing: 600/603 Your Pretty Face is Going to Hell| Processing: 601/603 Yu Yu Hakusho                    | Processing: 602/603 ZeroZeroZero | Processing: 603/603 Zootopia+                                  |                                                                                                    |
+| Processed 603 Shows                                                                                |
+|                                                                                                    |
+|====================================================================================================|
+|                                              Summary                                               |
+|====================================================================================================|
+|                                                                                                    |
+|========================================= TV Shows Summary =========================================|
+|                                                                                                    |
+| Title                       | Run Time |                                                           |
+| =========================== | ======== |                                                           |
+| Library Loading and Mapping |  0:00:01 |                                                           |
+|                                                                                                    |
+|        Title         |   +   |   =   |   -   | Run Time | Status                                   |
+|======================|=======|=======|=======|==========|==========================================|
+|                                                                                                    |
+|========================================= Warning Summary ==========================================|
+|                                                                                                    |
+| Count | Message                                                                                    |
+|=======|============================================================================================|
+|     1 | Config Warning: metadata_path has been deprecated and split into collection_files and metadata_files, Please visit the wiki to learn more about this transition. |
+|     1 | Config Warning: overlay_path has been deprecated in favor of overlay_files, Please visit the wiki to learn more about this transition. |
+|     1 | Config Warning: settings sub-attribute overlay_artwork_quality is blank using 90 as default |
+|     1 | Config Warning: trakt sub-attribute force_refresh not found using None as default          |
+|     1 | Config Error: mal sub-attribute client_id is blank                                         |
+|     1 | Config Error: anidb sub-attribute client is blank                                          |
+|     1 | Config Error: anidb sub-attribute username is blank                                        |
+|     1 | Config Warning: less attribute not found using None as default                             |
+|     1 | Config Warning: ignore_empty_smart_collections attribute not found using True as default   |
+|                                                                                                    |
+|========================================== Error Summary ===========================================|
+|                                                                                                    |
+| Count | Message                                                                                    |
+|=======|============================================================================================|
+|     1 | Invalid Root Folder: 'S:/Movies' Options: [[3:/data/media/movies], [4:/data/media/movies_hallmark_lifetime]] |
+|     1 | Invalid Root Folder: 'S:/TV Shows' Options: [[4:/data/media/tv]]                           |
+|     1 | Tautulli Error: Invalid apikey                                                             |
+|                                                                                                    |
+|====================================================================================================|
+|                                       Finished Libraries Run                                       |
+|                                           Version: 2.2.1                                           |
+|      Start Time: 14:56:25 2025-09-06     Finished: 14:56:30 2025-09-06     Run Time: 0:00:05       |
+|====================================================================================================|
+2025-09-06 14:56:30 kometa exit=0

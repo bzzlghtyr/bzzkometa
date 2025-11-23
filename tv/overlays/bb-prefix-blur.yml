@@ -1,0 +1,17 @@
+# /config/tv/overlays/bb-prefix-blur.yml
+# Blur overlay for Big Brother (US). Adjust the filter to match your exact Plex naming.
+
+templates:
+  import:
+    - file: ../../_templates/overlays/blur.template.yml
+
+overlays:
+  Big Brother Blur:
+    template: { name: BlurOverlay }
+    # Target just this show by title, guid, or collection:
+    filters:
+      # Pick ONE strong filter:
+      title.equals: "Big Brother (US)"         # if your Plex title is exactly this
+      # guid: "plex://show/5d9c..."            # or use GUID if titles vary
+    # Poster or overlay art can be specified here as needed.
+    # poster: config/overlays/blur.png

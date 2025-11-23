@@ -1,0 +1,10 @@
+# /config/tv/metadata/bb-us-show-label.yml
+# Per-show metadata tweaks for Big Brother (US).
+# Keep ONLY metadata fields here (no collection or overlay logic).
+
+metadata:
+  "Big Brother (US)":
+    sort_title: "Big Brother US"
+    # content_rating: TV-14
+    # audience_rating: 7.4
+    # studios: ["CBS"]

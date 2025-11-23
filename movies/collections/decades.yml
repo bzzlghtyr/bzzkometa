@@ -1,0 +1,23 @@
+# /config/movies/collections/decades.yml
+# Decade collections — library-only.
+
+collections:
+  1980s:
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label:
+      all:
+        year.gte: 1980
+        year.lt: 1990
+      sort_by: release.asc
+
+  1990s:
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label:
+      all:
+        year.gte: 1990
+        year.lt: 2000
+      sort_by: release.asc

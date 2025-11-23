@@ -1,0 +1,293 @@
+[2024-11-30 15:46:59,948] [kometa.py:267]             [INFO]     |====================================================================================================|
+[2024-11-30 15:46:59,949] [kometa.py:268]             [INFO]     |                                                                                                    |
+[2024-11-30 15:46:59,949] [kometa.py:269]             [INFO]     |                   __  ___  ______    ___  ___   _______  __________    ___                         |
+[2024-11-30 15:46:59,949] [kometa.py:270]             [INFO]     |                  |  |/  / /  __  \  |   \/   | |   ____||          |  /   \                        |
+[2024-11-30 15:46:59,949] [kometa.py:271]             [INFO]     |                  |  '  / |  |  |  | |  \  /  | |  |__   `---|  |---` /  ^  \                       |
+[2024-11-30 15:46:59,949] [kometa.py:272]             [INFO]     |                  |    <  |  |  |  | |  |\/|  | |   __|      |  |    /  /_\  \                      |
+[2024-11-30 15:46:59,949] [kometa.py:273]             [INFO]     |                  |  .  \ |  `--`  | |  |  |  | |  |____     |  |   /  _____  \                     |
+[2024-11-30 15:46:59,950] [kometa.py:274]             [INFO]     |                  |__|\__\ \______/  |__|  |__| |_______|    |__|  /__/     \__\                    |
+[2024-11-30 15:46:59,950] [kometa.py:275]             [INFO]     |                                                                                                    |
+[2024-11-30 15:46:59,950] [kometa.py:281]             [INFO]     |     Version: 2.1.0 (Docker: master)                                                                |
+[2024-11-30 15:46:59,994] [kometa.py:284]             [INFO]     |     Platform: Linux-6.1.38-Unraid-x86_64-with-glibc2.28                                            |
+[2024-11-30 15:46:59,995] [kometa.py:285]             [INFO]     |     Total Memory: 47 GB                                                                            |
+[2024-11-30 15:46:59,995] [kometa.py:286]             [INFO]     |     Available Memory: 26 GB                                                                        |
+[2024-11-30 15:46:59,995] [kometa.py:317]             [DEBUG]    |====================================================================================================|
+[2024-11-30 15:46:59,995] [kometa.py:318]             [DEBUG]    | Run Command: kometa.py --run --config config/cam_overlay/CamOverlay.yml                            |
+[2024-11-30 15:46:59,996] [kometa.py:322]             [DEBUG]    | --config (KOMETA_CONFIG): "config/cam_overlay/CamOverlay.yml"                                      |
+[2024-11-30 15:46:59,996] [kometa.py:322]             [DEBUG]    | --times (KOMETA_TIMES): "03:00,11:17"                                                              |
+[2024-11-30 15:46:59,996] [kometa.py:322]             [DEBUG]    | --run (KOMETA_RUN): True                                                                           |
+[2024-11-30 15:46:59,996] [kometa.py:322]             [DEBUG]    | --tests (KOMETA_TESTS): False                                                                      |
+[2024-11-30 15:46:59,996] [kometa.py:322]             [DEBUG]    | --debug (KOMETA_DEBUG): False                                                                      |
+[2024-11-30 15:46:59,996] [kometa.py:322]             [DEBUG]    | --trace (KOMETA_TRACE): False                                                                      |
+[2024-11-30 15:46:59,997] [kometa.py:322]             [DEBUG]    | --log-requests (KOMETA_LOG_REQUESTS): False                                                        |
+[2024-11-30 15:46:59,997] [kometa.py:322]             [DEBUG]    | --timeout (KOMETA_TIMEOUT): 180                                                                    |
+[2024-11-30 15:46:59,997] [kometa.py:322]             [DEBUG]    | --no-verify-ssl (KOMETA_NO_VERIFY_SSL): False                                                      |
+[2024-11-30 15:46:59,997] [kometa.py:322]             [DEBUG]    | --collections-only (KOMETA_COLLECTIONS_ONLY): False                                                |
+[2024-11-30 15:46:59,997] [kometa.py:322]             [DEBUG]    | --metadata-only (KOMETA_METADATA_ONLY): False                                                      |
+[2024-11-30 15:46:59,997] [kometa.py:322]             [DEBUG]    | --playlists-only (KOMETA_PLAYLISTS_ONLY): False                                                    |
+[2024-11-30 15:46:59,997] [kometa.py:322]             [DEBUG]    | --operations-only (KOMETA_OPERATIONS_ONLY): False                                                  |
+[2024-11-30 15:46:59,998] [kometa.py:322]             [DEBUG]    | --overlays-only (KOMETA_OVERLAYS_ONLY): False                                                      |
+[2024-11-30 15:46:59,998] [kometa.py:322]             [DEBUG]    | --run-collections (KOMETA_RUN_COLLECTIONS): None                                                   |
+[2024-11-30 15:46:59,998] [kometa.py:322]             [DEBUG]    | --run-libraries (KOMETA_RUN_LIBRARIES): None                                                       |
+[2024-11-30 15:46:59,998] [kometa.py:322]             [DEBUG]    | --run-files (KOMETA_RUN_FILES): None                                                               |
+[2024-11-30 15:46:59,998] [kometa.py:322]             [DEBUG]    | --ignore-schedules (KOMETA_IGNORE_SCHEDULES): False                                                |
+[2024-11-30 15:46:59,998] [kometa.py:322]             [DEBUG]    | --ignore-ghost (KOMETA_IGNORE_GHOST): False                                                        |
+[2024-11-30 15:46:59,998] [kometa.py:322]             [DEBUG]    | --delete-collections (KOMETA_DELETE_COLLECTIONS): False                                            |
+[2024-11-30 15:46:59,999] [kometa.py:322]             [DEBUG]    | --delete-labels (KOMETA_DELETE_LABELS): False                                                      |
+[2024-11-30 15:46:59,999] [kometa.py:322]             [DEBUG]    | --resume (KOMETA_RESUME): None                                                                     |
+[2024-11-30 15:46:59,999] [kometa.py:322]             [DEBUG]    | --no-countdown (KOMETA_NO_COUNTDOWN): False                                                        |
+[2024-11-30 15:46:59,999] [kometa.py:322]             [DEBUG]    | --no-missing (KOMETA_NO_MISSING): False                                                            |
+[2024-11-30 15:46:59,999] [kometa.py:322]             [DEBUG]    | --no-report (KOMETA_NO_REPORT): False                                                              |
+[2024-11-30 15:46:59,999] [kometa.py:322]             [DEBUG]    | --read-only-config (KOMETA_READ_ONLY_CONFIG): False                                                |
+[2024-11-30 15:47:00,000] [kometa.py:322]             [DEBUG]    | --divider (KOMETA_DIVIDER): "="                                                                    |
+[2024-11-30 15:47:00,000] [kometa.py:322]             [DEBUG]    | --width (KOMETA_WIDTH): 100                                                                        |
+[2024-11-30 15:47:00,000] [kometa.py:323]             [DEBUG]    |                                                                                                    |
+[2024-11-30 15:47:00,001] [kometa.py:329]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:00,001] [kometa.py:329]             [INFO]     |                                            Starting Run                                            |
+[2024-11-30 15:47:00,001] [kometa.py:329]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:00,001] [config.py:144]             [INFO]     | Locating config...                                                                                 |
+[2024-11-30 15:47:00,002] [config.py:150]             [INFO]     | Using /config/cam_overlay/CamOverlay.yml as config                                                 |
+[2024-11-30 15:47:00,003] [config.py:191]             [DEBUG]    |========================================= Redacted Config ==========================================|
+[2024-11-30 15:47:00,004] [config.py:193]             [DEBUG]    | # Add CAM, Telesync and Hardcoded Subtitles warnings on movie posters                              |
+[2024-11-30 15:47:00,004] [config.py:193]             [DEBUG]    |                                                                                                    |
+[2024-11-30 15:47:00,004] [config.py:193]             [DEBUG]    | overlays:                                                                                          |
+[2024-11-30 15:47:00,004] [config.py:193]             [DEBUG]    |                                                                                                    |
+[2024-11-30 15:47:00,005] [config.py:193]             [DEBUG]    |   CAM:                                                                                             |
+[2024-11-30 15:47:00,005] [config.py:193]             [DEBUG]    |     plex_all: true                                                                                 |
+[2024-11-30 15:47:00,005] [config.py:193]             [DEBUG]    |     filters:                                                                                       |
+[2024-11-30 15:47:00,005] [config.py:193]             [DEBUG]    |       filepath.regex: (?i)\bCAM\b                                                                  |
+[2024-11-30 15:47:00,006] [config.py:193]             [DEBUG]    |     overlay:                                                                                       |
+[2024-11-30 15:47:00,006] [config.py:193]             [DEBUG]    |       name: CAM                                                                                    |
+[2024-11-30 15:47:00,006] [config.py:193]             [DEBUG]    |       file: /config/cam_overlay/CAM.png                                                            |
+[2024-11-30 15:47:00,006] [config.py:193]             [DEBUG]    |       group: movie_info                                                                            |
+[2024-11-30 15:47:00,006] [config.py:193]             [DEBUG]    |       weight: 3                                                                                    |
+[2024-11-30 15:47:00,007] [config.py:193]             [DEBUG]    |     allowed_library_types: movie                                                                   |
+[2024-11-30 15:47:00,007] [config.py:193]             [DEBUG]    |                                                                                                    |
+[2024-11-30 15:47:00,007] [config.py:193]             [DEBUG]    |   TELESYNC:                                                                                        |
+[2024-11-30 15:47:00,007] [config.py:193]             [DEBUG]    |     plex_all: true                                                                                 |
+[2024-11-30 15:47:00,007] [config.py:193]             [DEBUG]    |     filters:                                                                                       |
+[2024-11-30 15:47:00,008] [config.py:193]             [DEBUG]    |       filepath.regex: (?i)\bTELESYNC\b                                                             |
+[2024-11-30 15:47:00,008] [config.py:193]             [DEBUG]    |     overlay:                                                                                       |
+[2024-11-30 15:47:00,008] [config.py:193]             [DEBUG]    |       name: TELESYNC                                                                               |
+[2024-11-30 15:47:00,008] [config.py:193]             [DEBUG]    |       file: /config/overlays/images/TELESYNC.png                                                   |
+[2024-11-30 15:47:00,009] [config.py:193]             [DEBUG]    |       group: movie_info                                                                            |
+[2024-11-30 15:47:00,009] [config.py:193]             [DEBUG]    |       weight: 2                                                                                    |
+[2024-11-30 15:47:00,009] [config.py:193]             [DEBUG]    |     allowed_library_types: movie                                                                   |
+[2024-11-30 15:47:00,009] [config.py:193]             [DEBUG]    |                                                                                                    |
+[2024-11-30 15:47:00,009] [config.py:193]             [DEBUG]    |   # HCS:                                                                                           |
+[2024-11-30 15:47:00,010] [config.py:193]             [DEBUG]    |   #   plex_all: true                                                                               |
+[2024-11-30 15:47:00,010] [config.py:193]             [DEBUG]    |   #   filters:                                                                                     |
+[2024-11-30 15:47:00,010] [config.py:193]             [DEBUG]    |   #     filepath.regex: '(?i)\bHC\b'                                                               |
+[2024-11-30 15:47:00,010] [config.py:193]             [DEBUG]    |   #   overlay:                                                                                     |
+[2024-11-30 15:47:00,010] [config.py:193]             [DEBUG]    |   #     name: HCS                                                                                  |
+[2024-11-30 15:47:00,011] [config.py:193]             [DEBUG]    |   #     file: /config/overlays/images/HCS.png                                                      |
+[2024-11-30 15:47:00,011] [config.py:193]             [DEBUG]    |   #     group: movie_info                                                                          |
+[2024-11-30 15:47:00,011] [config.py:193]             [DEBUG]    |   #     weight: 1                                                                                  |
+[2024-11-30 15:47:00,011] [config.py:193]             [DEBUG]    |   #   allowed_library_types: movie                                                                 |
+[2024-11-30 15:47:00,011] [config.py:193]             [DEBUG]    | settings:                                                                                          |
+[2024-11-30 15:47:00,012] [config.py:193]             [DEBUG]    |   cache: true                                                                                      |
+[2024-11-30 15:47:00,012] [config.py:193]             [DEBUG]    |   #cache_expiration: 60                                                                            |
+[2024-11-30 15:47:00,012] [config.py:193]             [DEBUG]    |   asset_directory: config/assets                                                                   |
+[2024-11-30 15:47:00,012] [config.py:193]             [DEBUG]    |   asset_folders: true                                                                              |
+[2024-11-30 15:47:00,013] [config.py:193]             [DEBUG]    |   asset_depth: 0                                                                                   |
+[2024-11-30 15:47:00,013] [config.py:193]             [DEBUG]    |   create_asset_folders: true                                                                       |
+[2024-11-30 15:47:00,013] [config.py:193]             [DEBUG]    |   prioritize_assets: false                                                                         |
+[2024-11-30 15:47:00,013] [config.py:193]             [DEBUG]    |   dimensional_asset_rename: false                                                                  |
+[2024-11-30 15:47:00,014] [config.py:193]             [DEBUG]    |   download_url_assets: false                                                                       |
+[2024-11-30 15:47:00,014] [config.py:193]             [DEBUG]    |   show_missing_season_assets: false                                                                |
+[2024-11-30 15:47:00,014] [config.py:193]             [DEBUG]    |   show_missing_episode_assets: false                                                               |
+[2024-11-30 15:47:00,014] [config.py:193]             [DEBUG]    |   show_asset_not_needed: true                                                                      |
+[2024-11-30 15:47:00,015] [config.py:193]             [DEBUG]    |   sync_mode: sync                                                                                  |
+[2024-11-30 15:47:00,015] [config.py:193]             [DEBUG]    |   minimum_items: 1                                                                                 |
+[2024-11-30 15:47:00,015] [config.py:193]             [DEBUG]    |   default_collection_order:                                                                        |
+[2024-11-30 15:47:00,015] [config.py:193]             [DEBUG]    |   delete_below_minimum: true                                                                       |
+[2024-11-30 15:47:00,015] [config.py:193]             [DEBUG]    |   delete_not_scheduled: false                                                                      |
+[2024-11-30 15:47:00,016] [config.py:193]             [DEBUG]    |   run_again_delay: 2                                                                               |
+[2024-11-30 15:47:00,016] [config.py:193]             [DEBUG]    |   missing_only_released: false                                                                     |
+[2024-11-30 15:47:00,016] [config.py:193]             [DEBUG]    |   only_filter_missing: false                                                                       |
+[2024-11-30 15:47:00,016] [config.py:193]             [DEBUG]    |   show_unmanaged: true                                                                             |
+[2024-11-30 15:47:00,017] [config.py:193]             [DEBUG]    |   show_filtered: false                                                                             |
+[2024-11-30 15:47:00,017] [config.py:193]             [DEBUG]    |   show_options: false                                                                              |
+[2024-11-30 15:47:00,017] [config.py:193]             [DEBUG]    |   show_missing: true                                                                               |
+[2024-11-30 15:47:00,017] [config.py:193]             [DEBUG]    |   show_missing_assets: true                                                                        |
+[2024-11-30 15:47:00,017] [config.py:193]             [DEBUG]    |   save_report: false                                                                               |
+[2024-11-30 15:47:00,018] [config.py:193]             [DEBUG]    |   tvdb_language: eng                                                                               |
+[2024-11-30 15:47:00,018] [config.py:193]             [DEBUG]    |   ignore_ids:                                                                                      |
+[2024-11-30 15:47:00,018] [config.py:193]             [DEBUG]    |   ignore_imdb_ids:                                                                                 |
+[2024-11-30 15:47:00,018] [config.py:193]             [DEBUG]    |   item_refresh_delay: 0                                                                            |
+[2024-11-30 15:47:00,019] [config.py:193]             [DEBUG]    |   playlist_sync_to_user: all                                                                       |
+[2024-11-30 15:47:00,019] [config.py:193]             [DEBUG]    |   playlist_report: false                                                                           |
+[2024-11-30 15:47:00,019] [config.py:193]             [DEBUG]    |   verify_ssl: true                                                                                 |
+[2024-11-30 15:47:00,019] [config.py:193]             [DEBUG]    |   custom_repo:                                                                                     |
+[2024-11-30 15:47:00,020] [config.py:193]             [DEBUG]    |   check_nightly: false                                                                             |
+[2024-11-30 15:47:00,020] [config.py:193]             [DEBUG]    |   show_unconfigured: true                                                                          |
+[2024-11-30 15:47:00,020] [config.py:193]             [DEBUG]    |   playlist_exclude_users:                                                                          |
+[2024-11-30 15:47:00,021] [config.py:193]             [DEBUG]    |   run_order:                                                                                       |
+[2024-11-30 15:47:00,021] [config.py:193]             [DEBUG]    |   - operations                                                                                     |
+[2024-11-30 15:47:00,021] [config.py:193]             [DEBUG]    |   - metadata                                                                                       |
+[2024-11-30 15:47:00,021] [config.py:193]             [DEBUG]    |   - collections                                                                                    |
+[2024-11-30 15:47:00,022] [config.py:193]             [DEBUG]    |   - overlays                                                                                       |
+[2024-11-30 15:47:00,022] [config.py:193]             [DEBUG]    |   overlay_artwork_filetype: jpg                                                                    |
+[2024-11-30 15:47:00,022] [config.py:193]             [DEBUG]    |   overlay_artwork_quality:                                                                         |
+[2024-11-30 15:47:00,022] [config.py:193]             [DEBUG]    |   cache_expiration: 60                                                                             |
+[2024-11-30 15:47:00,023] [config.py:193]             [DEBUG]    | webhooks:                                       # Can be individually specified per library as well |
+[2024-11-30 15:47:00,023] [config.py:193]             [DEBUG]    |   error:                                                                                           |
+[2024-11-30 15:47:00,023] [config.py:193]             [DEBUG]    |   version:                                                                                         |
+[2024-11-30 15:47:00,023] [config.py:193]             [DEBUG]    |   run_start:                                                                                       |
+[2024-11-30 15:47:00,024] [config.py:193]             [DEBUG]    |   run_end:                                                                                         |
+[2024-11-30 15:47:00,024] [config.py:193]             [DEBUG]    |   changes:                                                                                         |
+[2024-11-30 15:47:00,024] [config.py:193]             [DEBUG]    |   delete:                                                                                          |
+[2024-11-30 15:47:00,024] [config.py:193]             [DEBUG]    | plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run |
+[2024-11-30 15:47:00,025] [config.py:193]             [DEBUG]    |   url: (redacted)                                                                                  |
+[2024-11-30 15:47:00,025] [config.py:193]             [DEBUG]    |   token: (redacted)                                                                                |
+[2024-11-30 15:47:00,025] [config.py:193]             [DEBUG]    |   timeout: 60                                                                                      |
+[2024-11-30 15:47:00,025] [config.py:193]             [DEBUG]    |   clean_bundles: false                                                                             |
+[2024-11-30 15:47:00,026] [config.py:193]             [DEBUG]    |   empty_trash: false                                                                               |
+[2024-11-30 15:47:00,026] [config.py:193]             [DEBUG]    |   optimize: false                                                                                  |
+[2024-11-30 15:47:00,026] [config.py:193]             [DEBUG]    |   db_cache:                                                                                        |
+[2024-11-30 15:47:00,026] [config.py:193]             [DEBUG]    |   verify_ssl:                                                                                      |
+[2024-11-30 15:47:00,027] [config.py:193]             [DEBUG]    | tmdb:                                           # REQUIRED for the script to run                   |
+[2024-11-30 15:47:00,027] [config.py:193]             [DEBUG]    |   apikey: (redacted)                                                                               |
+[2024-11-30 15:47:00,027] [config.py:193]             [DEBUG]    |   language: en                                                                                     |
+[2024-11-30 15:47:00,027] [config.py:193]             [DEBUG]    |   cache_expiration: 60                                                                             |
+[2024-11-30 15:47:00,028] [config.py:193]             [DEBUG]    |   region:                                                                                          |
+[2024-11-30 15:47:00,028] [config.py:193]             [DEBUG]    | tautulli:                                       # Can be individually specified per library as well |
+[2024-11-30 15:47:00,028] [config.py:193]             [DEBUG]    |   url: (redacted)                                                                                  |
+[2024-11-30 15:47:00,028] [config.py:193]             [DEBUG]    |   apikey: (redacted)                                                                               |
+[2024-11-30 15:47:00,029] [config.py:193]             [DEBUG]    | omdb:                                                                                              |
+[2024-11-30 15:47:00,029] [config.py:193]             [DEBUG]    |   apikey: (redacted)                                                                               |
+[2024-11-30 15:47:00,030] [config.py:193]             [DEBUG]    |   cache_expiration: 60                                                                             |
+[2024-11-30 15:47:00,030] [config.py:193]             [DEBUG]    | mdblist:                                                                                           |
+[2024-11-30 15:47:00,030] [config.py:193]             [DEBUG]    |   apikey: (redacted)                                                                               |
+[2024-11-30 15:47:00,030] [config.py:193]             [DEBUG]    |   cache_expiration: 60                                                                             |
+[2024-11-30 15:47:00,031] [config.py:193]             [DEBUG]    | notifiarr:                                                                                         |
+[2024-11-30 15:47:00,031] [config.py:193]             [DEBUG]    |   apikey: (redacted)                                                                               |
+[2024-11-30 15:47:00,031] [config.py:193]             [DEBUG]    | anidb:                                          # Not required for AniDB builders unless you want mature content |
+[2024-11-30 15:47:00,031] [config.py:193]             [DEBUG]    |   username: (redacted)                                                                             |
+[2024-11-30 15:47:00,032] [config.py:193]             [DEBUG]    |   password: (redacted)                                                                             |
+[2024-11-30 15:47:00,032] [config.py:193]             [DEBUG]    |   language: en                                                                                     |
+[2024-11-30 15:47:00,032] [config.py:193]             [DEBUG]    |   client:                                                                                          |
+[2024-11-30 15:47:00,032] [config.py:193]             [DEBUG]    | radarr:                                         # Can be individually specified per library as well |
+[2024-11-30 15:47:00,033] [config.py:193]             [DEBUG]    |   url: (redacted)                                                                                  |
+[2024-11-30 15:47:00,033] [config.py:193]             [DEBUG]    |   token: (redacted)                                                                                |
+[2024-11-30 15:47:00,033] [config.py:193]             [DEBUG]    |   add_missing: false                                                                               |
+[2024-11-30 15:47:00,033] [config.py:193]             [DEBUG]    |   add_existing: false                                                                              |
+[2024-11-30 15:47:00,033] [config.py:193]             [DEBUG]    |   root_folder_path: S:/Movies                                                                      |
+[2024-11-30 15:47:00,034] [config.py:193]             [DEBUG]    |   monitor: true                                                                                    |
+[2024-11-30 15:47:00,034] [config.py:193]             [DEBUG]    |   availability: announced                                                                          |
+[2024-11-30 15:47:00,034] [config.py:193]             [DEBUG]    |   quality_profile: HD-1080p                                                                        |
+[2024-11-30 15:47:00,034] [config.py:193]             [DEBUG]    |   tag:                                                                                             |
+[2024-11-30 15:47:00,034] [config.py:193]             [DEBUG]    |   search: false                                                                                    |
+[2024-11-30 15:47:00,035] [config.py:193]             [DEBUG]    |   radarr_path:                                                                                     |
+[2024-11-30 15:47:00,035] [config.py:193]             [DEBUG]    |   plex_path:                                                                                       |
+[2024-11-30 15:47:00,035] [config.py:193]             [DEBUG]    |   upgrade_existing: false                                                                          |
+[2024-11-30 15:47:00,035] [config.py:193]             [DEBUG]    |   ignore_cache: false                                                                              |
+[2024-11-30 15:47:00,036] [config.py:193]             [DEBUG]    |   monitor_existing: false                                                                          |
+[2024-11-30 15:47:00,036] [config.py:193]             [DEBUG]    | sonarr:                                         # Can be individually specified per library as well |
+[2024-11-30 15:47:00,036] [config.py:193]             [DEBUG]    |   url: (redacted)                                                                                  |
+[2024-11-30 15:47:00,036] [config.py:193]             [DEBUG]    |   token: (redacted)                                                                                |
+[2024-11-30 15:47:00,036] [config.py:193]             [DEBUG]    |   add_missing: false                                                                               |
+[2024-11-30 15:47:00,037] [config.py:193]             [DEBUG]    |   add_existing: false                                                                              |
+[2024-11-30 15:47:00,037] [config.py:193]             [DEBUG]    |   root_folder_path: S:/TV Shows                                                                    |
+[2024-11-30 15:47:00,037] [config.py:193]             [DEBUG]    |   monitor: all                                                                                     |
+[2024-11-30 15:47:00,037] [config.py:193]             [DEBUG]    |   quality_profile: HD-1080p                                                                        |
+[2024-11-30 15:47:00,038] [config.py:193]             [DEBUG]    |   language_profile: English                                                                        |
+[2024-11-30 15:47:00,038] [config.py:193]             [DEBUG]    |   series_type: standard                                                                            |
+[2024-11-30 15:47:00,038] [config.py:193]             [DEBUG]    |   season_folder: true                                                                              |
+[2024-11-30 15:47:00,038] [config.py:193]             [DEBUG]    |   tag:                                                                                             |
+[2024-11-30 15:47:00,039] [config.py:193]             [DEBUG]    |   search: false                                                                                    |
+[2024-11-30 15:47:00,039] [config.py:193]             [DEBUG]    |   cutoff_search: false                                                                             |
+[2024-11-30 15:47:00,039] [config.py:193]             [DEBUG]    |   sonarr_path:                                                                                     |
+[2024-11-30 15:47:00,039] [config.py:193]             [DEBUG]    |   plex_path:                                                                                       |
+[2024-11-30 15:47:00,040] [config.py:193]             [DEBUG]    |   upgrade_existing: false                                                                          |
+[2024-11-30 15:47:00,040] [config.py:193]             [DEBUG]    |   ignore_cache: false                                                                              |
+[2024-11-30 15:47:00,040] [config.py:193]             [DEBUG]    |   monitor_existing: false                                                                          |
+[2024-11-30 15:47:00,041] [config.py:193]             [DEBUG]    | trakt:                                                                                             |
+[2024-11-30 15:47:00,041] [config.py:193]             [DEBUG]    |   client_id: (redacted)                                                                            |
+[2024-11-30 15:47:00,041] [config.py:193]             [DEBUG]    |   client_secret: (redacted)                                                                        |
+[2024-11-30 15:47:00,042] [config.py:193]             [DEBUG]    |   pin:                                                                                             |
+[2024-11-30 15:47:00,042] [config.py:193]             [DEBUG]    |   authorization:                                                                                   |
+[2024-11-30 15:47:00,042] [config.py:193]             [DEBUG]    |     # everything below is autofilled by the script                                                 |
+[2024-11-30 15:47:00,042] [config.py:193]             [DEBUG]    |     access_token: (redacted)                                                                       |
+[2024-11-30 15:47:00,043] [config.py:193]             [DEBUG]    |     token_type: Bearer                                                                             |
+[2024-11-30 15:47:00,043] [config.py:193]             [DEBUG]    |     expires_in: 7889237                                                                            |
+[2024-11-30 15:47:00,043] [config.py:193]             [DEBUG]    |     refresh_token: (redacted)                                                                      |
+[2024-11-30 15:47:00,043] [config.py:193]             [DEBUG]    |     scope: public                                                                                  |
+[2024-11-30 15:47:00,044] [config.py:193]             [DEBUG]    |     created_at: 1727646801                                                                         |
+[2024-11-30 15:47:00,044] [config.py:193]             [DEBUG]    | mal:                                                                                               |
+[2024-11-30 15:47:00,044] [config.py:193]             [DEBUG]    |   client_id: (redacted)                                                                            |
+[2024-11-30 15:47:00,044] [config.py:193]             [DEBUG]    |   client_secret: (redacted)                                                                        |
+[2024-11-30 15:47:00,045] [config.py:193]             [DEBUG]    |   authorization:                                                                                   |
+[2024-11-30 15:47:00,045] [config.py:193]             [DEBUG]    |     # everything below is autofilled by the script                                                 |
+[2024-11-30 15:47:00,045] [config.py:193]             [DEBUG]    |     access_token:                                                                                  |
+[2024-11-30 15:47:00,045] [config.py:193]             [DEBUG]    |     token_type:                                                                                    |
+[2024-11-30 15:47:00,045] [config.py:193]             [DEBUG]    |     expires_in:                                                                                    |
+[2024-11-30 15:47:00,045] [config.py:193]             [DEBUG]    |     refresh_token:                                                                                 |
+[2024-11-30 15:47:00,046] [config.py:194]             [DEBUG]    |                                                                                                    |
+[2024-11-30 15:47:00,061] [config.py:522]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:00,062] [cache.py:17]               [INFO]     | Initializing cache database at /config/cam_overlay/CamOverlay.cache                                |
+[2024-11-30 15:47:00,068] [config.py:530]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:00,068] [config.py:534]             [INFO]     | Connecting to Notifiarr...                                                                         |
+[2024-11-30 15:47:00,448] [config.py:545]             [INFO]     | Notifiarr Connection Successful                                                                    |
+[2024-11-30 15:47:00,448] [config.py:565]             [INFO]     | gotify attribute not found                                                                         |
+[2024-11-30 15:47:00,449] [config.py:585]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:00,449] [config.py:590]             [INFO]     | Connecting to TMDb...                                                                              |
+[2024-11-30 15:47:00,562] [config.py:599]             [INFO]     | TMDb Connection Successful                                                                         |
+[2024-11-30 15:47:00,562] [config.py:603]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:00,563] [config.py:607]             [INFO]     | Connecting to OMDb...                                                                              |
+[2024-11-30 15:47:00,662] [config.py:618]             [INFO]     | OMDb Connection Successful                                                                         |
+[2024-11-30 15:47:00,662] [config.py:622]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:00,662] [config.py:626]             [INFO]     | Connecting to MDBList...                                                                           |
+[2024-11-30 15:47:03,534] [config.py:632]             [INFO]     | MDBList Connection Successful                                                                      |
+[2024-11-30 15:47:03,535] [config.py:642]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:03,535] [config.py:646]             [INFO]     | Connecting to Trakt...                                                                             |
+[2024-11-30 15:47:03,670] [config.py:660]             [INFO]     | Trakt Connection Successful                                                                        |
+[2024-11-30 15:47:03,671] [config.py:664]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:03,671] [config.py:668]             [INFO]     | Connecting to My Anime List...                                                                     |
+[2024-11-30 15:47:03,671] [config.py:680]             [WARNING]  | Config Error: mal sub-attribute client_id is blank                                                 |
+[2024-11-30 15:47:03,672] [config.py:683]             [INFO]     | My Anime List Connection Failed                                                                    |
+[2024-11-30 15:47:03,672] [config.py:691]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:03,672] [config.py:692]             [INFO]     | Connecting to AniDB...                                                                             |
+[2024-11-30 15:47:03,672] [config.py:701]             [WARNING]  | Config Error: anidb sub-attribute client is blank                                                  |
+[2024-11-30 15:47:03,672] [config.py:704]             [INFO]     | AniDB API Connection Failed                                                                        |
+[2024-11-30 15:47:03,673] [config.py:712]             [WARNING]  | Config Error: anidb sub-attribute username is blank                                                |
+[2024-11-30 15:47:03,673] [config.py:715]             [INFO]     | AniDB Login Failed Continuing as Guest                                                             |
+[2024-11-30 15:47:03,673] [config.py:717]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:03,673] [config.py:722]             [INFO]     | playlist_files attribute not found                                                                 |
+[2024-11-30 15:47:03,752] [config.py:753]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:03,753] [config.py:755]             [INFO]     | Connecting to Plex Libraries...                                                                    |
+[2024-11-30 15:47:03,753] [config.py:1280]            [INFO]     |====================================================================================================|
+[2024-11-30 15:47:03,755] [config.py:1294]            [DEBUG]    | Traceback (most recent call last):                                                                 |
+                                                                 |   File "/modules/config.py", line 1287, in __init__                                                |
+                                                                 |     raise Failed("Config Error: No libraries were found in config")                                |
+                                                                 | modules.util.Failed: Config Error: No libraries were found in config                               |
+                                                                 |                                                                                                    |
+[2024-11-30 15:47:03,759] [kometa.py:335]             [DEBUG]    | Traceback (most recent call last):                                                                 |
+                                                                 |   File "//kometa.py", line 333, in start                                                           |
+                                                                 |     config = ConfigFile(my_requests, default_dir, attrs, secret_args)                              |
+                                                                 |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                              |
+                                                                 |   File "/modules/config.py", line 1287, in __init__                                                |
+                                                                 |     raise Failed("Config Error: No libraries were found in config")                                |
+                                                                 | modules.util.Failed: Config Error: No libraries were found in config                               |
+                                                                 |                                                                                                    |
+[2024-11-30 15:47:03,760] [kometa.py:336]             [CRITICAL] | Config Error: No libraries were found in config                                                    |
+[2024-11-30 15:47:03,760] [kometa.py:344]             [INFO]     |                                                                                                    |
+[2024-11-30 15:47:03,761] [kometa.py:419]             [INFO]     |========================================= Warning Summary ==========================================|
+[2024-11-30 15:47:03,761] [kometa.py:421]             [INFO]     |                                                                                                    |
+[2024-11-30 15:47:03,761] [kometa.py:422]             [INFO]     | Count | Message                                                                                    |
+[2024-11-30 15:47:03,761] [kometa.py:423]             [INFO]     |=======|============================================================================================|
+[2024-11-30 15:47:03,761] [kometa.py:425]             [INFO]     |     1 | Config Error: mal sub-attribute client_id is blank                                         |
+[2024-11-30 15:47:03,761] [kometa.py:425]             [INFO]     |     1 | Config Error: anidb sub-attribute client is blank                                          |
+[2024-11-30 15:47:03,762] [kometa.py:425]             [INFO]     |     1 | Config Error: anidb sub-attribute username is blank                                        |
+[2024-11-30 15:47:03,762] [kometa.py:426]             [INFO]     |                                                                                                    |
+[2024-11-30 15:47:03,762] [kometa.py:419]             [INFO]     |========================================= Critical Summary =========================================|
+[2024-11-30 15:47:03,762] [kometa.py:421]             [INFO]     |                                                                                                    |
+[2024-11-30 15:47:03,762] [kometa.py:422]             [INFO]     | Count | Message                                                                                    |
+[2024-11-30 15:47:03,762] [kometa.py:423]             [INFO]     |=======|============================================================================================|
+[2024-11-30 15:47:03,763] [kometa.py:425]             [INFO]     |     1 | Config Error: No libraries were found in config                                            |
+[2024-11-30 15:47:03,763] [kometa.py:426]             [INFO]     |                                                                                                    |
+[2024-11-30 15:47:03,763] [kometa.py:431]             [INFO]     |====================================================================================================|
+[2024-11-30 15:47:03,763] [kometa.py:431]             [INFO]     |                                            Finished Run                                            |
+[2024-11-30 15:47:03,763] [kometa.py:431]             [INFO]     |                                           Version: 2.1.0                                           |
+[2024-11-30 15:47:03,763] [kometa.py:431]             [INFO]     |                          Finished: 15:47:03 2024-11-30 Run Time: 0:00:03                           |
+[2024-11-30 15:47:03,764] [kometa.py:431]             [INFO]     |====================================================================================================|

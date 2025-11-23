@@ -1,0 +1,11 @@
+# /config/movies/collections/studios.yml
+# Example “Studios” rollups — library-only by default. Add/remove as you like.
+
+collections:
+  Studio Ghibli:
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    tmdb_company: 10342
+    summary: "Feature films produced by Studio Ghibli."
+    sync_mode: sync

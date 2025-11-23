@@ -1,0 +1,131 @@
+collections:
+  'Halloween - The Office':
+    imdb_list:
+      - https://www.imdb.com/list/ls542968698/ # correct office halloween list
+      #- https://www.imdb.com/list/ls542926527/ # parks and rec christmas for testing
+    collection_level: episode
+    sync_mode: sync
+    summary: Halloween episodes from The Office.
+    file_poster: config/Posters/Halloween/tv/halloween_office.png
+    #overlay: config/overlays/halloween_border.png
+    schedule: "range(09/10-11/03)"
+    delete_not_scheduled: true
+    collection_order: release.asc
+    sort_title: '!AAHO'
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  "Halloween - Bob’s Burgers":
+    imdb_list:
+      - https://www.imdb.com/list/ls542968858/
+    collection_level: episode
+    sync_mode: sync
+    summary: Halloween Episodes from Bob's Burgers
+    file_poster: config/Posters/Halloween/tv/halloween_bob.png
+    #overlay: config/overlays/halloween_border.png
+    schedule: "range(09/10-11/03)"
+    delete_not_scheduled: true
+    collection_order: release.asc
+    sort_title: '!AAHBO'
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  'Halloween - Brooklyn Nine-Nine':
+    imdb_list:
+      - https://www.imdb.com/list/ls542926384/
+    collection_level: episode
+    sync_mode: sync
+    summary: Halloween Episodes from Brooklyn Nine-Nine
+    file_poster: config/Posters/Halloween/tv/halloween_b99.png
+    overlay: config/overlays/halloween_border.png
+    schedule: "range(09/10-11/03)"
+    delete_not_scheduled: true
+    collection_order: release.asc
+    sort_title: '!AAHBRO'
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  'Halloween - Community':
+    imdb_list:
+      - https://www.imdb.com/list/ls542926322/
+    collection_level: episode
+    sync_mode: sync
+    summary: Halloween Episodes from Community
+    #file_poster: config/Posters/Christmas/tv/office_christmas.png
+    overlay: config/overlays/halloween_border.png
+    schedule: "range(09/10-11/03)"
+    delete_not_scheduled: true
+    collection_order: release.asc
+    sort_title: '!AAHCOM'
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  'Halloween - Parks and Recreation':
+    imdb_list:
+      - https://www.imdb.com/list/ls542920736/
+    collection_level: episode
+    sync_mode: sync
+    summary: Halloween Episodes from Parks and Recreation
+    #file_poster: config/Posters/Christmas/tv/office_christmas.png
+    overlay: config/overlays/halloween_border.png
+    schedule: "range(09/10-11/03)"
+    delete_not_scheduled: true
+    collection_order: release.asc
+    sort_title: '!AAHPRO'
+    visible_home: true
+    visible_shared: true
+    visible_library: true    
+
+  'Friends: Thanksgiving':
+    trakt_list:
+      - https://trakt.tv/users/lampshadetricky/lists/friends-thanksgiving-episodes
+    collection_level: episode
+    sync_mode: sync
+    summary: It's the time of the year, for Thanksgiving episodes!
+    file_poster: config/Posters/Thanksgiving/tv/friends_thanksgiving.png
+    #url_poster: https://theposterdb.com/api/assets/48897
+    schedule: "range(11/01-11/30)"
+    delete_not_scheduled: true
+    collection_order: release.asc
+    sort_title: '!AATK'
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Christmas Episodes:
+    imdb_search:
+      keyword: "christmas episode" # https://www.imdb.com/search/keyword/?keywords=christmas-episode&title_type=tvEpisode
+      type: tv_episode
+      limit: 0
+    collection_level: episode
+    sync_mode: sync
+    summary: It's the time of the year, for Christmas episodes!
+    #url_poster: https://theposterdb.com/api/assets/48897
+    schedule: "range(11/01-01/02)"
+    delete_not_scheduled: true
+    collection_order: custom
+    sort_title: '!AA'
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Thanksgiving Episodes:
+    imdb_search:
+      keyword: "thanksgiving episode" # https://www.imdb.com/search/keyword/?keywords=thanksgiving-episode&title_type=tvEpisode
+      type: tv_episode
+      limit: 0
+    collection_level: episode
+    sync_mode: sync
+    summary: It's the time of the year, for Thanksgiving episodes!
+    #url_poster: https://theposterdb.com/api/assets/48897
+    schedule: "range(11/03-11/30)"
+    delete_not_scheduled: true
+    collection_order: custom
+    sort_title: '!AB'
+    visible_home: true
+    visible_shared: true
+    visible_library: true

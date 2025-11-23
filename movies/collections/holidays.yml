@@ -1,0 +1,146 @@
+# /config/movies/collections/holidays.yml
+# HOLIDAY COLLECTIONS (Movies) — imports the Holiday template and defines individual rows.
+
+templates:
+  import:
+    - file: ../../_templates/collections/holiday.template.yml
+
+collections:
+
+  Valentines Day Movies:
+    template: { name: Holiday, holiday: "Valentine's Day" }
+    schedule: range(01/25-02/14)
+    sort_title: '!AAF'
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label: audience_rating.desc
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+
+  St Patricks Day Movies:
+    template: { name: Holiday, holiday: "St. Patrick's Day" }
+    schedule: range(03/01-03/17)
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label: audience_rating.desc
+    imdb_list: https://www.imdb.com/list/ls063934595/
+
+  Ethereal Enigmas:
+    template: { name: Holiday, holiday: "spooky and haunting" }
+    schedule: range(08/01-11/05)
+    sort_title: '!AAC'
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label: audience_rating.desc
+    limit: 100
+    file_poster: config/Posters/Halloween/ethereal_enigmas.png
+    imdb_list:
+      - https://www.imdb.com/list/ls542818237/
+
+  Halloween Favorites:
+    template: { name: Holiday, holiday: "Halloween" }
+    schedule: range(08/01-10/31)
+    sort_title: '!AAC'
+    visible_home: false   # flip to true if you want a seasonal Home row
+    visible_shared: false
+    visible_library: true
+    smart_label: audience_rating.desc
+    limit: 100
+    file_poster: config/Posters/Halloween/halloween_ghost.png
+    imdb_list:
+      - https://www.imdb.com/list/ls000091321/
+      - https://www.imdb.com/list/ls023118929/
+      - https://www.imdb.com/list/ls021038698/
+    tmdb_collection:
+      - 91361   # Halloween Collection
+      - 8581    # A Nightmare on Elm Street Collection
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/the-top-100-halloween-movies-of-all-time
+
+  Wholesome Halloween:
+    template: { name: Holiday, holiday: "Halloween" }
+    schedule: range(08/01-10/31)
+    sort_title: '!AAAC'
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label: audience_rating.desc
+    file_poster: config/Posters/Halloween/halloween_family.jpeg
+    imdb_list:
+      - https://www.imdb.com/list/ls521628526/
+
+  Hallmark Lifetime Christmas Movies:
+    template: { name: Holiday, holiday: "Hallmark/Lifetime Christmas" }
+    schedule: range(01/01-12/31)
+    sort_title: '!AAAB'
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label: audience_rating.desc
+    file_poster: config/Posters/Hallmark Lifetime Christmas/Christmas.png
+    trakt_list:
+      - https://trakt.tv/users/ad76/lists/hallmark-christmas?sort=released,asc
+      - https://trakt.tv/users/ad76/lists/lifetime-christmas?sort=released,asc
+
+  Christmas Movies:
+    template: { name: Holiday, holiday: "Christmas" }
+    schedule: range(11/01-12/31)
+    sort_title: '!AAA'
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    file_poster: config/Posters/Christmas/Christmas.jpeg
+    smart_label:
+      sort_by: audience_rating.desc
+      all:
+        label: <<smart_label>>
+        label.not: Hallmark Lifetime Christmas Movies
+    trakt_list:
+      - https://trakt.tv/users/outspoken/lists/christmas
+      - https://trakt.tv/users/mausk/lists/christmas
+      - https://trakt.tv/users/mlantz87/lists/christmas?sort=popularity,asc
+
+  Kids Christmas Movies:
+    template: { name: Holiday, holiday: "Kids Christmas" }
+    schedule: range(11/01-12/31)
+    sort_title: '!AAA'
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label:
+      sort_by: audience_rating.desc
+      all:
+        label: <<smart_label>>
+        label.not: Hallmark Lifetime Christmas Movies
+    trakt_list:
+      - https://trakt.tv/users/chevyfan/lists/kids-christmas-movies
+      - https://trakt.tv/users/plexmedia/lists/kids-christmas-films
+
+  Thanksgiving Movies:
+    template: { name: Holiday, holiday: "Thanksgiving" }
+    schedule: range(11/01-11/30)
+    sort_title: '!AAD'
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label: audience_rating.desc
+    file_poster: config/Posters/Thanksgiving/Thanksgiving.jpeg
+    imdb_list:
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls086366598/
+      - https://www.imdb.com/list/ls045164453/
+
+  New Years Eve Movies:
+    template: { name: Holiday, holiday: "New Year's Eve" }
+    schedule: range(12/26-01/05)
+    sort_title: '!AAB'
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    smart_label: audience_rating.desc
+    imdb_list: https://www.imdb.com/list/ls066838460/
